@@ -1,0 +1,1095 @@
+body{
+    font-family: "Bahnschrift";
+    background: linear-gradient(#8dcbd8 12%, white 99%);
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+    cursor: pointer;    
+}
+#navg.navv.responsive {
+    position: relative;
+}
+#navg.navv.responsive li.nav2{ /* trieda responsive otvori hamburger menu*/
+    clear: both;
+    display: block;
+    text-align: center;
+    padding: 13px;
+    width: 100%;
+    background-color: rgb(102, 100, 100);
+    border-top: 0.5px solid #e3e3e3;
+}
+li.nav2{
+    display: none;
+}
+nav #lastli{
+    display: unset;
+    width: 35px !important;
+    float: right;
+    padding: 13px 35px;
+}
+#lastli img{
+    width: 40px;
+    padding-right: 45px;
+    padding-top: 7px !important;
+}
+main{
+    width: 375px;
+    margin: 0 auto;
+    padding-top: 90px;
+    margin-bottom: 70px;
+}
+header{
+    height: 90px;
+    width: 100%;
+    color: white;
+    background: linear-gradient(black 10%, rgb(90, 90, 90) 100%);
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+#header{
+    width: 100%;
+    height: 90px;
+}
+.medzera{
+    clear: both;
+    height: 20px;
+}
+#logo{
+    width: 81px;
+    float: left;
+    height: 90px;
+}
+#logo img{
+    width: 81px;
+    height: 90px;
+}
+nav{
+    text-align: right;
+    display: inline-block;
+    height: 90px;
+    width: 100%
+}
+nav a{
+    display: inline-block;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+#logo a{
+    margin: 0;
+}
+.main-gallery h1{
+    font-size: 22px;
+}
+.main-gallery h2{
+    font-size: 18px;
+}
+.main-contact h1{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.main-contact{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: black;
+    display: block;
+    font-size: 15px;
+}
+#map{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.main-contact a{
+    color: blue;
+    text-decoration: none;
+}
+.main-contact a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.main-contact h1,
+.main-contact h3,
+.main-contact p{
+    text-shadow: 2px 2px 3px white;
+}
+.main-about-me-img{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.main-about-me-img img{
+    width: 100%;
+    box-shadow: -25px 25px 30px black;
+    border-radius: 10px;
+}
+.main-about-me{
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    text-align: justify;
+    text-shadow: 2px 2px 3px white;
+}
+.main-about-me h1{
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.main-about-me p{
+    text-shadow: 2px 2px 3px white;
+    font-size: 14px;
+    width: 330px;
+    margin: 0 auto;
+    line-height: 1.4em;
+}
+.main-gallery{
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 3px white;
+}
+.gallery-work{
+    box-sizing: border-box;
+    height: 410px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.gallery-work1{
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 1px black;
+    position: relative;
+}
+.gallery-work-first{
+    margin-top: 30px;
+}
+.gallery-work2{
+    margin-top: 55px;
+}
+.gallery-work img{
+    max-width: 90%;
+    margin: 0 auto;
+    height: 320px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.novinka{
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    height: 120px !important;
+}
+.novinka img{
+    width: 50px;
+    height: 50px;
+}
+.obraz-na-sirku{
+    height: 280px !important;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+.gallery-work-popis{
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+    text-shadow: none;
+}
+.gallery-work-popis p{
+    margin: 0;
+}
+.gallery-work-popis p:last-child{
+    padding-bottom: 20px;
+}
+/* CAROUSEL */
+.section{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.slider{
+    width: 375px;
+    overflow: hidden;
+    height: 237.5px;
+}
+.slide{
+    width: 500%;
+    height: 237.5px;
+    display: flex;
+}
+.slide input{
+    display: none;
+}
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 375px;
+    height: 237.5px;
+}
+.nav-m{
+    position: absolute;
+    width: 375px;
+    margin-top: -17px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid aqua;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: aqua;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+.nav-auto{
+    position: absolute;
+    width: 375px;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid aqua;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: aqua;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: aqua;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: aqua;
+}
+.main-terms,
+.main-faq{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.main-terms h1{
+    margin-bottom: 35px;
+    font-size: 24px;
+}
+.main-terms h3{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.main-terms p{
+    margin-top: 0;
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 13px;
+}
+.main-faq button{
+    border: 2px solid black;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: "Bahnschrift";
+    font-size: 15px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main-faq button:hover{
+    background-color: rgb(50, 50, 50);
+}
+.main-faq-span{
+    display: block;
+    margin-bottom: 15px;
+}
+#sprava{
+    display: block;
+    width: 340px;
+    height: 180px;
+    resize: none;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.index-text{
+    width: 350px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+.index-text1{
+    font-size: 12px;
+    text-align: justify;
+    margin: 15px;
+    margin-right: 20px;
+}
+.index-text1 img{
+    width: 20px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 120px;
+}
+.main-price-list p{
+    margin: 30px 20px 20px;
+    font-size: 20px;
+}
+.main-price-list p.ph2{
+    text-align: left;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.main-price-list table{
+    text-align: center;
+    border: 3px solid black;
+    font-size: 18px;
+    margin: 10px 10px 40px;
+}
+.main-price-list thead{
+    font-weight: 700;
+}
+.main-price-list tr,
+.main-price-list td{
+    border: 1px solid black;
+    padding: 5px;
+}
+#main-price-list-p{
+    font-size: 13px;
+    text-align: justify;
+}
+.main-gallery > p {
+    text-align: justify;
+    margin: 10px;
+    font-size: 12px;
+}
+.hviezdicka{
+    color: red;
+}
+/* FOOTER */
+#footer{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+}
+#footer-div{
+    padding: 10px;
+}
+#footer-div,
+#footer-note{
+    width: 300px;
+    margin: 0 auto;
+}
+.footer-content-div{
+    display: block;
+    margin-bottom: 40px;
+}
+#footer-note{
+    padding: 5px;
+    font-size: 10px;
+}
+.footer-copyright{
+    font-size: 14px;
+}
+.footer-contact{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.footer-contact img{
+    width: 16px;
+    float: left;
+    padding-right: 10px;
+}
+.footer-contact a{
+    text-decoration: none;
+    color: black;
+}
+.footer-contact a:hover{
+    color: blue;
+}
+.footer-phone img{
+    width: 14px;
+    padding-right: 12px;
+}
+.footer-instagram img{
+    width: 15px;
+    padding-right: 12px;
+}
+#footer-facebook img{
+    width: 11px;
+    padding-right: 12px;
+}
+
+.footer-content-div a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 11px;
+}
+.footer-content-div a:hover{
+    color: blue;
+}
+@media only screen and (min-width: 480px){
+    main{
+        width: 100%;
+        padding-top: 90px;
+        margin-bottom: 70px;
+    }
+    nav{
+        width: 100%;
+    }
+    .slider{
+        width: 480px;
+        margin: 0 auto;
+        height: 304px;
+    }
+    .slide{
+        width: 500%;
+        height: 304px;
+    }
+    .st img{
+        width: 480px;
+        height: 304px;
+    }
+    .nav-m{
+        width: 480px;
+        margin-top: -23px;
+    }
+    .nav-auto{
+        width: 480px;
+        margin-top: 281.6px;
+    }
+    .index-text{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .index-text1{
+        font-size: 14px;
+        text-align: justify;
+        margin: 15px;
+        margin-right: 30px;
+    }
+    .index-text1 img{
+        width: 40px;
+    }
+    #footer{
+        font-size: 18px;
+    }
+    #footer-div{
+        padding: 10px;
+    }
+    #footer-div{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #footer-note{
+        width: 90%;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .footer-copyright{
+        font-size: 16px;
+    }
+    .footer-contact{
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .footer-contact img{
+        width: 22px;
+    }
+    .footer-phone img{
+        width: 20px;
+    }
+    .footer-instagram img{
+        width: 20px;
+    }
+	#footer-facebook img{
+        width: 14px;
+		margin-left: 3px;
+		margin-right: 3px;
+    }
+
+    .footer-content-div a{
+        font-size: 18px;
+    }
+    .gallery-work{
+        height: 410px;
+        width: 440px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .main-gallery h1{
+        font-size: 28px;
+    }
+    .main-gallery h2{
+        width: 400px;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    .main-gallery > p {
+        margin: 20px;
+        font-size: 14px;
+    }
+    .gallery-work2{
+        margin-top: 55px;
+    }
+    .main-about-me-img{
+        width: 440px;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    .main-about-me{
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .main-about-me h1{
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+    .main-about-me p{
+        font-size: 16px;
+        width: 420px;
+        margin: 0 auto;
+    }
+    .main-contact{
+        width: 420px;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .main-faq{
+        width: 420px;
+    }
+    .main-faq button{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .main-faq-span{
+        margin-bottom: 25px;
+    }
+    #sprava{
+        width: 420px;
+    }
+    .main-terms{
+        width: 420px;
+    }
+    .main-terms h1{
+        font-size: 28px;
+    }
+    .main-terms h3{
+        font-size: 20px;
+    }
+    .main-terms p{
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+    .main-price-list p{
+        margin: 30px 20px 20px;
+        font-size: 21px;
+    }
+    .main-price-list p.ph2{
+        text-align: left;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+    .main-price-list table{
+        font-size: 18px;
+        margin: 10px 10px 40px;
+    }
+    .main-price-list tr,
+    .main-price-list td{
+        padding: 5px;
+    }
+    #main-price-list-p{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .slider{
+        width: 576px;
+        margin: 0 auto;
+        height: 364.8px;
+    }
+    .slide{
+        width: 500%;
+        height: 364.8px;
+    }
+    .st img{
+        width: 576px;
+        height: 364.8px;
+    }
+    .nav-m{
+        width: 576px;
+        margin-top: -27px;
+    }
+    .nav-auto{
+        width: 576px;
+        margin-top: 337.92px;
+    }
+    .footer-content-div{
+        width: 50%;
+        float: left;
+        margin-bottom: 55px;
+    }
+    .footer-content-div:first-child{
+        margin-bottom: 10px;
+    }
+    .main-about-me-img{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    .main-about-me{
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .main-about-me h1{
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+    .main-about-me p{
+        font-size: 17px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .main-contact{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    #map{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .main-faq{
+        width: 80%;
+    }
+    .main-faq button{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .main-faq-span{
+        margin-bottom: 25px;
+    }
+    #sprava{
+        width: 80%;
+    }
+    .main-terms{
+        width: 85%;
+    }
+    .main-terms h1{
+        font-size: 32px;
+    }
+    .main-terms h3{
+        font-size: 24px;
+    }
+    .main-terms p{
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+    .main-price-list p{
+        margin: 30px 30px 20px;
+        font-size: 22px;
+    }
+    .main-price-list p.ph2{
+        text-align: left;
+        margin: 30px;
+        margin-bottom: 40px;
+    }
+    .main-price-list table{
+        font-size: 18px;
+        margin: 20px 30px 40px;
+    }
+    .main-price-list tr,
+    .main-price-list td{
+        padding: 10px;
+    }
+    #main-price-list-p{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 768px){
+    li.nav2{
+        display: inline-block;
+        font-size: 20px;
+        padding: 25.5px 4%;
+    }
+    nav #lastli{
+        display: none;
+    }
+    .slider{
+        width: 768px;
+        margin: 0 auto;
+        height: 486.4px;
+    }
+    .slide{
+        width: 500%;
+        height: 486.4px;
+    }
+    .st img{
+        width: 768px;
+        height: 486.4px;
+    }
+    .nav-m{
+        width: 768px;
+        margin-top: -27px;
+    }
+    .nav-auto{
+        width: 768px;
+        margin-top: 458.56px;
+    }
+    .index-text{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .index-text1{
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .index-text1 img{
+        width: 50px;
+    }
+    .footer-content-div{
+        width: 30%;
+        float: left;
+        margin-bottom: 55px;
+    }
+    .footer-content-div:first-child{
+        width: 40%;
+    }
+    .gallery-work{
+        height: 460px;
+        width: 45%;
+        margin: 0 2.5%;
+        float: left;
+        margin-top: 10px;
+    }
+    .main-gallery h1{
+        font-size: 32px;
+    }
+    .main-gallery h2{
+        width: 75%;
+        margin: 0 auto;
+        font-size: 22px;
+    }
+    .main-gallery > p {
+        width: 90%;
+        margin: 20px auto 0px;
+        font-size: 18px;
+    }
+    .gallery-work2{
+        margin-top: 35px;
+    }
+}
+@media only screen and (min-width: 992px){
+    li.nav2{
+        display: inline-block;
+        font-size: 20px;
+        padding: 25.5px 5%;
+    }
+    .slider{
+        width: 992px;
+        margin: 0 auto;
+        height: 628.27px;
+    }
+    .slide{
+        width: 500%;
+        height: 628.27px;
+    }
+    .st img{
+        width: 992px;
+        height: 628.27px;
+    }
+    .nav-m{
+        width: 992px;
+        margin-top: -26px;
+    }
+    .nav-auto{
+        width: 992px;
+        margin-top: 602.31px;
+    }
+    .index-text{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .index-text1{
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .index-text1 img{
+        width: 50px;
+    }
+    #footer-div{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .footer-content-div{
+        width: 28%;
+        float: left;
+        margin-bottom: 55px;
+    }
+    .footer-content-div:first-child{
+        width: 34%;
+    }
+    .main-about-me-img{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    .main-about-me{
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .main-about-me h1{
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+    .main-about-me p{
+        font-size: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .main-contact{
+        width: 220px;
+        margin: 30px;
+        margin-top: 50px;
+        font-size: 18px;
+        text-align: left;
+        float: left;
+    }
+    #map{
+        width: 680px;
+        display: inline-block;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+    #map iframe{
+        height: 400px;
+    }
+    .main-faq{
+        width: 90%;
+    }
+    #sprava{
+        width: 100%;
+    }
+    .main-price-list p{
+        margin: 30px 30px 20px;
+        font-size: 22px;
+    }
+    .main-price-list p.ph2{
+        text-align: left;
+        margin: 30px;
+        margin-bottom: 40px;
+    }
+    .main-price-list table{
+        font-size: 20px;
+        margin: 20px 30px 40px;
+    }
+    .main-price-list tr,
+    .main-price-list td{
+        padding: 15px;
+    }
+    #main-price-list-p{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    main{
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 90px;
+        margin-bottom: 70px;
+    }
+    #header{
+        width: 1200px;
+        margin: 0 auto;
+        height: 90px;
+    }
+    .slider{
+        width: 1200px;
+        margin: 0 auto;
+        height: 760px;
+    }
+    .slide{
+        width: 500%;
+        height: 760px;
+    }
+    .st img{
+        width: 1200px;
+        height: 760px;
+    }
+    .nav-m{
+        width: 1200px;
+        margin-top: -40px;
+    }
+    .nav-auto{
+        width: 1200px;
+        margin-top: 720px;
+    }
+    .index-text{
+        font-size: 22px;
+    }
+    .index-text1{
+        font-size: 18px;
+    }
+    .index-text1 img{
+        width: 60px;
+    }
+    #footer-div{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    #footer-content{
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .footer-content-div{
+        width: 31%;
+        float: left;
+        padding: 0;
+        margin-bottom: 55px;
+    }
+    .footer-content-div:first-child{
+        width: 38%;
+    }
+    #footer-note{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .gallery-work{
+        height: 435px;
+        width: 32%;
+        margin: 0 0.66%;
+        float: left;
+        margin-top: 10px;
+    }
+    .main-gallery h2{
+        font-size: 25px;
+    }
+    .main-gallery > p {
+        width: 95%;
+        margin: 40px auto 0px;
+        font-size: 19px;
+    }
+    .gallery-work2{
+        margin-top: 35px;
+    }
+    .main-about-me-img{
+        width: 40%;
+        margin: 0;
+        margin-top: 90px;
+        float: left;
+    }
+    .main-about-me{
+        margin-left: 480px;
+        margin-top: 120px;
+        margin-bottom: 200px;
+    }
+    .main-contact{
+        width: 280px;
+        margin: 30px;
+        margin-top: 50px;
+        font-size: 22px;
+        text-align: left;
+        float: left;
+    }
+    #map{
+        width: 820px;
+        display: inline-block;
+        margin: 0;
+        margin-top: 80px;
+        margin-bottom: 75px;
+    }
+    #map iframe{
+        height: 460px;
+    }
+    .main-faq{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 120px;
+        font-size: 20px;
+    }
+    #sprava{
+        width: 960px;
+        height: 240px;
+        margin-top: 10px;
+    }
+    .main-faq button{
+        padding: 6px 18px;
+        font-size: 18px;
+        width: 120px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .main-terms{
+        width: 1200px;
+        margin: 40px auto;
+    }
+    .main-price-list p{
+        font-size: 24px;
+    }
+    .main-price-list table{
+        font-size: 24px;
+    }
+    .main-price-list tr,
+    .main-price-list td{
+        padding: 20px;
+    }
+    #main-price-list-p{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>R U B Y L I S S A</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <nav id="navg" class="navv">
+                    <ul>
+                        <li id="logo">
+                            <a href="index.html"><img src="img/logo-2-biele.png" alt="Logo"></a>
+                        </li>
+                        <li class="nav2">
+                            <a href="gallery.html" onclick="myFunction2()">Gallery</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="store.html" onclick="myFunction2()">Store</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="digital-art.html" onclick="myFunction2()">Digital Art</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="about-me.html" onclick="myFunction2()">About Me</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="contact.html" onclick="myFunction2()">Contact</a>
+                        </li>
+                        <li id="lastli">
+                            <a href="#" class="icon" onclick="myFunction()"><img src="img/bars-solid.png" alt="menu"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div class="main-gallery">
+                <h1>Sold Work</h1>
+                <h2>If you like a work that has already been sold, don't despair and contact me</h2>
+                
+
+
+
+
+
+
+
+
+
+					<div class="gallery-work gallery-work-first">
+                    <div class="gallery-work1">
+                        <img src="img/sold-1.PNG" alt="">
+                        <div class="gallery-work-popis">
+                            <p>21 x 19 cm</p>
+                            <p>pencil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-work gallery-work-first">
+                    <div class="gallery-work1">
+                        <img src="img/sold-2.PNG" alt="">
+                        <div class="gallery-work-popis">
+                            <p>A4 (21 x 29.7cm)</p>
+                            <p>pencil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-work gallery-work-first">
+                    <div class="gallery-work1">
+                        <img src="img/sold-3.JPG" alt="">
+                        <div class="gallery-work-popis">
+                            <p>A4 (21 x 29.7cm)</p>
+                            <p>pencil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-work">
+                    <div class="gallery-work1">
+                        <img src="img/sold-4.PNG" alt="">
+                        <div class="gallery-work-popis">
+                            <p>A3 (29.7 x 42 cm)</p>
+                            <p>pencil, carbon</p>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-work">
+                    <div class="gallery-work1">
+                        <img src="img/dig-1.JPG" alt="">
+                        <div class="gallery-work-popis">
+                            <p>3800 x 2400 px</p>
+                            <p>Digital Art</p>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-work">
+                    <div class="gallery-work1">
+                        <img src="img/dig-2.JPG" alt="">
+                        <div class="gallery-work-popis">
+                            <p>3800 x 2400 px</p>
+                            <p>Digital Art</p>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-work">
+                    <div class="gallery-work1">
+                        <img src="img/IMG_5800.jpg" alt="">
+                        <div class="gallery-work-popis">
+                            <p>A4 (21 x 29.7cm)</p>
+                            <p>pencil, charcoal</p>                         
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="medzera"></div>
+        </main> 
+        <footer>
+            <div id="footer">
+                <div id="footer-div">
+                    <div id="footer-content">
+                        <div class="footer-content-div">
+                            <h2>Contact</h2>
+                            <div class="footer-contact">
+                                <a href="mailto: rubylissaart@gmail.com"><img src="img/envelope-solid.svg" alt="Mail">rubylissaart@gmail.com</a>
+                            </div>
+                            <div class="footer-contact footer-phone">
+                                <a href="tel:+421915619006"><img src="img/phone-solid.svg" alt="Phone">+421 915 619 006</a>
+                            </div>
+                            <div class="footer-contact footer-instagram">
+                                <a href="https://www.instagram.com/rubylissaart" target="_blank"><img src="img/instagram.svg" alt="Instagram">rubylissaart</a>
+                            </div>
+							<div id="footer-facebook" class="footer-contact">
+                                <a href="https://www.facebook.com/profile.php?id=61553299054256" target="_blank"><img src="img/facebook.svg" alt="Facebook">Ruby Lissa Art</a>
+                            </div>
+							<div class="footer-contact footer-pinterest">
+                                <a href="https://sk.pinterest.com/rubylissaart" target="_blank"><img src="img/pinterest.svg" alt="Pinterest">RUBYLISSAART</a>
+                            </div>
+							<div class="footer-contact footer-pinterest footer-sashe">
+                                <a href="https://www.sashe.sk/rubylissaart" target="_blank"><img src="img/sass.svg" alt="Sashe">rubylisaart</a>
+                            </div>
+                        </div>
+                        <div class="footer-content-div">
+                            <h2>Information</h2>
+                            <a href="about-me.html">About Me</a>
+                            <a href="faq.html">FAQ</a>
+                            <a href="price-list.html">Price list</a>
+                        </div>
+                        <div class="footer-content-div">
+                            <h2>Policies</h2>
+                            <a href="terms-and-conditions.html">Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <div class="medzera"></div>
+                </div>
+            </div>
+            <div id="footer-note">
+                <span class="footer-copyright">&copy;</span><span>Copyright 2023 <b>RUBYLISSA</b>. All Rights Reserved</span>
+            </div>
+        </footer>
+    </body>
+</html>

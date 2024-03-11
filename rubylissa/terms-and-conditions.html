@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>R U B Y L I S S A</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <nav id="navg" class="navv">
+                    <ul>
+                        <li id="logo">
+                            <a href="index.html"><img src="img/logo-2-biele.png" alt="Logo"></a>
+                        </li>
+                        <li class="nav2">
+                            <a href="gallery.html" onclick="myFunction2()">Gallery</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="store.html" onclick="myFunction2()">Store</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="digital-art.html" onclick="myFunction2()">Digital Art</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="about-me.html" onclick="myFunction2()">About Me</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="contact.html" onclick="myFunction2()">Contact</a>
+                        </li>
+                        <li id="lastli">
+                            <a href="#" class="icon" onclick="myFunction()"><img src="img/bars-solid.png" alt="menu"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div class="main-terms">
+                <h1>Terms and Conditions</h1>
+                <h3>Introduction</h3>
+                <p>Welcome to our website, where we sell original art and paintings. By using our website, you agree to be bound by these terms and conditions ("Terms") and our Privacy Policy. Please read these Terms carefully before using our website.</p>
+                <h3>Intellectual Property Rights</h3>
+                <p>All content on our website, including but not limited to images, designs, logos, and text, is the property of our company and protected by copyright and trademark laws. You may not use any content from our website without our prior written consent.</p>
+                <h3>Ordering Process</h3>
+                <p>To place an order, select the desired art/painting, and proceed to checkout. You will be required to provide your personal and payment information. By placing an order, you represent and warrant that you are authorized to use the payment method provided and that all information you provide is accurate and complete.</p>
+                <h3>Prices and Payment</h3>
+                <p>All prices listed on our website are in Euros € and include applicable taxes. We accept payment via credit/debit cards or PayPal. We reserve the right to change our prices at any time without notice.</p>
+                <h3>Shipping and Delivery</h3>
+                <p>Shipping cost varies based on the transportation method and distance. Personal pickup is also available for local customers. International customers are responsible for any customs fees, duties, or taxes incurred. We aim to deliver orders within 2-4 weeks of purchase, although delivery times may vary depending on the destination.</p>
+                <h3>Returns and Refunds</h3>
+                <p>We accept returns and offer refunds within 14 days of delivery if the art/painting is damaged or does not match the description on our website. To initiate a return, please contact us at <a href="mailto: rubylissaart@gmail.com" alt="Mail">rubylissaart@gmail.com</a>. We will provide instructions for returning the item, and we will issue a refund once we receive the returned item in its original condition.</p>
+                <h3>Disclaimer of Warranties</h3>
+                <p>Our website and its content are provided "as is" without any warranty of any kind, either express or implied. We do not warrant that our website will be uninterrupted or error-free or that any defects will be corrected.</p>
+                <h3>Limitation of Liability</h3>
+                <p>In no event shall our company, its directors, officers, employees, or affiliates be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with the use of our website or the purchase of any art/painting, even if we have been advised of the possibility of such damages.</p>
+                <h3>Indemnification</h3>
+                <p>You agree to indemnify and hold our company, its directors, officers, employees, and affiliates harmless from any claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of your use of our website, your violation of these Terms, or your violation of any rights of another.</p>
+                <h3>Governing Law and Jurisdiction</h3>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the state of Slovakia, without giving effect to any principles of conflicts of law. Any dispute arising out of or in connection with these Terms shall be resolved in the courts located in Nitra, Slovakia.</p>
+                <h3>Amendments</h3>
+                <p>We reserve the right to amend these Terms at any time without notice by updating this page. By continuing to use our website after any amendments, you agree to be bound by the revised Terms.</p>
+                <h3>Entire Agreement</h3>
+                <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and our company with respect to your use of our website and the purchase of any art/painting.</p>
+            </div>
+        </main> 
+        <footer>
+            <div id="footer">
+                <div id="footer-div">
+                    <div id="footer-content">
+                        <div class="footer-content-div">
+                            <h2>Contact</h2>
+                            <div class="footer-contact">
+                                <a href="mailto: rubylissaart@gmail.com"><img src="img/envelope-solid.svg" alt="Mail">rubylissaart@gmail.com</a>
+                            </div>
+                            <div class="footer-contact footer-phone">
+                                <a href="tel:+421915619006"><img src="img/phone-solid.svg" alt="Phone">+421 915 619 006</a>
+                            </div>
+                            <div class="footer-contact footer-instagram">
+                                <a href="https://www.instagram.com/rubylissaart" target="_blank"><img src="img/instagram.svg" alt="Instagram">rubylissaart</a>
+                            </div>
+							<div id="footer-facebook" class="footer-contact">
+                                <a href="https://www.facebook.com/profile.php?id=61553299054256" target="_blank"><img src="img/facebook.svg" alt="Facebook">Ruby Lissa Art</a>
+                            </div>
+							<div class="footer-contact footer-pinterest">
+                                <a href="https://sk.pinterest.com/rubylissaart" target="_blank"><img src="img/pinterest.svg" alt="Pinterest">RUBYLISSAART</a>
+                            </div>
+							<div class="footer-contact footer-pinterest footer-sashe">
+                                <a href="https://www.sashe.sk/rubylissaart" target="_blank"><img src="img/sass.svg" alt="Sashe">rubylisaart</a>
+                            </div>
+                        </div>
+                        <div class="footer-content-div">
+                            <h2>Information</h2>
+                            <a href="about-me.html">About Me</a>
+                            <a href="faq.html">FAQ</a>
+                            <a href="price-list.html">Price list</a>
+                        </div>
+                        <div class="footer-content-div">
+                            <h2>Policies</h2>
+                            <a href="terms-and-conditions.html">Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <div class="medzera"></div>
+                </div>
+            </div>
+            <div id="footer-note">
+                <span class="footer-copyright">&copy;</span><span>Copyright 2023 <b>RUBYLISSA</b>. All Rights Reserved</span>
+            </div>
+        </footer>
+    </body>
+</html>

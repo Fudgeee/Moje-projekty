@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>R U B Y L I S S A</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <nav id="navg" class="navv">
+                    <ul>
+                        <li id="logo">
+                            <a href="index.html"><img src="img/logo-2-biele.png" alt="Logo"></a>
+                        </li>
+                        <li class="nav2">
+                            <a href="gallery.html" onclick="myFunction2()">Gallery</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="store.html" onclick="myFunction2()">Store</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="digital-art.html" onclick="myFunction2()">Digital Art</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="about-me.html" onclick="myFunction2()">About Me</a>
+                        </li>
+                        <li class="nav2">
+                            <a href="contact.html" onclick="myFunction2()">Contact</a>
+                        </li>
+                        <li id="lastli">
+                            <a href="#" class="icon" onclick="myFunction()"><img src="img/bars-solid.png" alt="menu"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <section class="section">
+                <div class="slider">
+                    <div class="slide">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <div class="st first">
+                            <img src="img/Untitled_Artwork.jpg" alt="">
+                        </div>
+                        <div class="st">
+                            <img src="img/dig-2.JPG" alt="">
+                        </div>
+                        <div class="st">
+                            <img src="img/gal-6.JPG" alt="">
+                        </div>
+                        <div class="nav-auto">
+                            <div class="a-b1"></div>
+                            <div class="a-b2"></div>
+                            <div class="a-b3"></div>
+                        </div>
+                    </div>
+                    <div class="nav-m">
+                        <label for="radio1" class="m-btn"></label>
+                        <label for="radio2" class="m-btn"></label>
+                        <label for="radio3" class="m-btn"></label>
+                    </div>
+                </div>
+            </section>
+            <script type="text/javascript">
+                var counter=1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked=true;
+                    counter++;
+                    if(counter > 3){
+                        counter = 1;
+                    }
+                },5000);
+            </script>
+            <div class="index-text">
+                <p>If you're looking for someone who can fulfill your artistic style, you're in the right place. I create paintings, portraits and digital art. We can discuss and customize each project according to your vision.</p>
+                <p>Art is the best way to immortalize something beautiful, and I always strive for quality. There are no limits to creativity, and as a result, my portfolio continues to grow so that everyone can find something that resonates with them.</p>
+            </div>
+            <hr style="margin-bottom: 30px;">
+            <div class="index-text1">
+                <img src="img/info1.png" alt="">
+                <p>In the store, you can find ready-made artworks that are available for immediate shipping. However, I also create custom pieces. If you are interested in a custom artwork, please contact me via email at <a href="mailto: rubylissaart@gmail.com">rubylissaart@gmail.com</a>. We can discuss the dimensions and the medium for the portrait. I will provide you with a price quote in advance, as well as an estimated turnaround time for the completion of the artwork.</p>
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <div id="footer-div">
+                    <div id="footer-content">
+                        <div class="footer-content-div">
+                            <h2>Contact</h2>
+                            <div class="footer-contact">
+                                <a href="mailto: rubylissaart@gmail.com"><img src="img/envelope-solid.svg" alt="Mail">rubylissaart@gmail.com</a>
+                            </div>
+                            <div class="footer-contact footer-phone">
+                                <a href="tel:+421915619006"><img src="img/phone-solid.svg" alt="Phone">+421 915 619 006</a>
+                            </div>
+                            <div class="footer-contact footer-instagram">
+                                <a href="https://www.instagram.com/rubylissaart" target="_blank"><img src="img/instagram.svg" alt="Instagram">rubylissaart</a>
+                            </div>
+							<div id="footer-facebook" class="footer-contact">
+                                <a href="https://www.facebook.com/profile.php?id=61553299054256" target="_blank"><img src="img/facebook.svg" alt="Facebook">Ruby Lissa Art</a>
+                            </div>
+							<div class="footer-contact footer-pinterest">
+                                <a href="https://sk.pinterest.com/rubylissaart" target="_blank"><img src="img/pinterest.svg" alt="Pinterest">RUBYLISSAART</a>
+                            </div>
+							<div class="footer-contact footer-pinterest footer-sashe">
+                                <a href="https://www.sashe.sk/rubylissaart" target="_blank"><img src="img/sass.svg" alt="Sashe">rubylisaart</a>
+                            </div>
+                        </div>
+                        <div class="footer-content-div">
+                            <h2>Information</h2>
+                            <a href="about-me.html">About Me</a>
+                            <a href="faq.html">FAQ</a>
+                            <a href="price-list.html">Price list</a>
+                        </div>
+                        <div class="footer-content-div">
+                            <h2>Policies</h2>
+                            <a href="terms-and-conditions.html">Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <div class="medzera"></div>
+                </div>
+            </div>
+            <div id="footer-note">
+                <span class="footer-copyright">&copy;</span><span>Copyright 2023 <b>RUBYLISSA</b>. All Rights Reserved</span>
+            </div>
+        </footer>
+    </body>
+</html>
