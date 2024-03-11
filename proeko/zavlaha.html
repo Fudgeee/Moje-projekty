@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const images = document.querySelectorAll('.clickable-image');
+                const enlargedView = document.createElement('div');
+                enlargedView.classList.add('enlarged');
+                let enlarged = false;
+        
+                document.body.appendChild(enlargedView);
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        enlargedView.innerHTML = '';
+                        enlarged = !enlarged;
+        
+                        if (enlarged) {
+                            const clone = image.cloneNode(true);
+                            clone.style.height = 'auto';
+                            enlargedView.appendChild(clone);
+                            enlargedView.style.opacity = 1;
+                            enlargedView.style.pointerEvents = 'auto';
+        
+                            // Přidáme tlačítko zavírání do zvětšeného pohledu
+                            const closeButton = document.createElement('div');
+                            closeButton.classList.add('close-button');
+                            closeButton.innerHTML = '&times;';
+                            enlargedView.appendChild(closeButton);
+        
+                            // Přidáme událost kliknutí na tlačítko zavírání
+                            closeButton.addEventListener('click', () => {
+                                enlargedView.style.opacity = 0;
+                                enlargedView.style.pointerEvents = 'none';
+                                enlarged = false;
+                            });
+        
+                            // Přidáme událost kliknutí mimo zvětšený pohled
+                            enlargedView.addEventListener('click', (event) => {
+                                if (event.target === enlargedView) {
+                                    enlargedView.style.opacity = 0;
+                                    enlargedView.style.pointerEvents = 'none';
+                                    enlarged = false;
+                                }
+                            });
+                        } else {
+                            enlargedView.style.opacity = 0;
+                            enlargedView.style.pointerEvents = 'none';
+                        }
+                    });
+                });
+            });
+        </script>  
+        <main id="zavlaha">
+            <h1>KRÁSNA A ZDRAVÁ ZÁHRADA AJ POČAS OBDOBIA SUCHA</h1>
+            <p>Každý záhradkár a milovník zelených trávnatých plôch sa cíti dobre v takej záhrade, ktorá je zdravá a žiari sýtymi farbami. Často aj dobrá starostlivosť majiteľa o okrasnú záhradu alebo trávnik nepostačuje, pokiaľ táto nemá k dispozícii kvalitné zavlažovanie. Pre tento účel slúžia rôzne druhy závlahových systémov, ktoré pomáhajú dosiahnuť a udržať pekný a zdravý vzhľad záhrady a trávnika počas celého vegetačného obdobia. Automatická závlaha je  veľkým pomocníkom v záhrade a investícia vložená do takéhoto zariadena nie je v žiadnom prípade "vyhodením peňazí".</p>
+            <p>Ponúkame kompletnú odbornú realizáciu automatických závlahových systémov značky HUNTER. Dodanie funkčného závlahového systému zahŕňa zameranie pozemku, návrh s rozpočtovaním závlahového systému, a následnú realizáciu a inštaláciu v teréne. Samozrejmosťou je aj záručný a pozáručný servis na nami dodávané závlahy.</p>
+            <div class="graficka-stud">
+                <img src="img/zavlahy/uvod/zav01.jpg" alt="závlaha" class="clickable-image">
+                <img src="img/zavlahy/uvod/zav02.jpg" alt="závlaha" class="clickable-image">
+                <img src="img/zavlahy/uvod/zav03.jpg" alt="závlaha" class="clickable-image">
+                <img src="img/zavlahy/uvod/zavlaha1.jpg" alt="závlaha" class="clickable-image">
+                <img src="img/zavlahy/uvod/zavlaha2.jpg" alt="závlaha" class="clickable-image">
+                <img src="img/zavlahy/uvod/zavlaha3.jpg" alt="závlaha" class="clickable-image">
+            </div>
+            <p>Štandardným riešením je inštalácia závlahy s automatickou riadiacou jednotkou, ktorá svojimi funkciami ponúka individuálne možnosti nastavenia podľa aktuálnej potreby zavlažovania v danej záhrade. Či sa už jedná o automatické výsuvné polievače na zatrávnené plochy alebo kvapkovú závlahu vo výsadbách okrasných drevín, ale i mikro závlahu či závlahové sondy, ktoré sa dajú využiť v úžitkovej záhrade alebo vo vyvýšených záhonoch. Jednou riadiacou jednotkou teda vieme efektne naplánovať pravidelné zalievanie celej záhrady. Správnym nastavením kvalitne navrhnutého a nainštalovaného závlahového systému môžeme zákazníkovi ušetriť jednak čas ale aj vodné zdroje, ktoré su v dnešnej dobe už i tak výrazne obmedzené.</p>
+            <h2 class="druha">Závlahový systém v záhrade ponúka praktickú aj estetickú funkciu...</h2>
+            <div class="graficka-studia1">
+                <a href="zavlaha-pgj.html"><img src="img/zavlahy/pgj/P4220115.jpg" alt="závlaha"></a>
+                <p>
+                    <a href="zavlaha-pgj.html">PGJ rotačné polievače</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="zavlaha-pro-spray.html"><img src="img/zavlahy/pro-spray/P6120365.jpg" alt="závlaha"></a>
+                <p>
+                    <a href="zavlaha-pro-spray.html">Pro Spray stacionárne polievače</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="zavlaha-mp.html"><img src="img/zavlahy/mp/mp05.jpg" alt="závlaha"></a>
+                <p>
+                    <a href="zavlaha-mp.html">MP rotatory Hunter</a>
+                </p>
+            </div>
+            <div class="medzera1"></div>
+            <h2>Výhody, ktoré prináša závlahový systém Vašej záhrade:</h2>
+            <p><b>Ušetrí Vám čas</b> spúšťanie závlahy je riadené elektronickou jednotkou, ktorá po nastavení spustí automaticky závlahový systém v ktorúkoľvek hodinu počas dňa alebo noci a na ľubovoľnú dĺžku polievania jednotlivých závlahových vetví. Ani Vaša dovolenka alebo dlhšia neprítomosť neovplyvní kvalitu vzhľadu Vašej záhrady.</p>
+            <p><b>Ušetrí Vám náklady za vodu a energie</b> - Ideálny čas na zavlažovanie je noc alebo skoré ranné hodiny. Vtedy sú straty spôsobené odparovaním najnižšie a zvyčajne je aj najnižšia intenzita vetra. Riadiaca závlahová jednotka môže byť vybavená aj senzorom, ktorý v prípade dažďa počas Vašej neprítomnosti automaticky preruší naplánované zavlažovanie. Zákazník si sám dokáže jednoducho naplánovať a ustrážiť spotrebu vody tak, aby trávnik dostal práve toľko a len toľko vody, koľko potrebuje, či je už závlaha spustená počas dňa alebo v noci.</p>
+            <p><b>Rovnomerne dodáva vodu trávniku a rastlinám</b> - postrekovače sú rozmiestnené tak, aby počas zavlažovania bola plocha rovnomerne zaliata, rovnako ako pri daždi. Vďaka širokej ponuke postrekovačov Hunter na trhu, je možné zavlažiť každý kút v záhrade.</p>
+            <p><b>Znižuje pracnosť so zavlažovaním</b> - už žiadne ťahanie hadíc po celom pozemku, cez celú záhradu, rozvíjanie a opätovné ukladanie každý deň... Postrekovače sú výsuvné a sú priamo zabudované pod trávnikom alebo vo výsadbe. Mimo prevádzky sú skryté pod povrchom pôdy a až pri zavlažovaní sa pod tlakom vody vysunú a zavlažujú. Po ukončení zavlažovania sa postrekovače automaticky zasunú späť do svojho puzdra pod terén. Takéto závlahy zabudované v trávniku sú bezproblémové aj pri nízkom kosení trávnika.</p>
+            <p><b>Umožňuje dodatočne prispôsobiť svoju funkciu</b> - závlahové výsuvné hlavice sa samozrejme dajú do určitej miery aj dodatočne prispôsobiť v prípade dodatočnej zmeny v záhrade. Je možnosť nastavenia diaľky a frekvencie závlahy, potrebného uhla zavlažovania alebo dočasného odstavenia jednotlivých výsuvných hlavíc.</p>
+            <p><b>Zavlažovanie výsadieb okrasných drevín</b> - v systéme automatických závlah môže byť zahrnuté a nainštalované aj zavlažovanie výsadieb okrasných drevín, stromov, krov, kvetinových záhonov. Tento vysoko úsporný systém zavlažovania dodáva vodu jednotlivým rastlinám v malom potrebnom množstve. Jedná sa o povrchové kvapkové hadice s kompenzáciou tlaku s postupným odkvapkávaním vody priamo ku každej rastline vo vašej výsadbe. Estetická stránka výsadby je tiež zachovaná, keďže povrchový hadicový rozvod je prekrytý buď dekoračnou alebo mulčovacou kôrou, prípadne dekoračným kameňom.  </p>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

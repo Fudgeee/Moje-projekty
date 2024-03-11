@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div id="predzahradky">
+                <h1>Menšie záhradné úpravy a predzáhradky</h1>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_36.html"><img src="img/predzahradky/36 mp/36 mp - titulka/04.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_36.html">36 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_35.html"><img src="img/predzahradky/35 mp/35 mp - titulka/05.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_35.html">35 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_34.html"><img src="img/predzahradky/34 mp/34 mp - titulka/06travnik.JPG" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_34.html">34 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_33.html"><img src="img/predzahradky/33 mp/titulka/20220921_111348.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_33.html">33 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_32.html"><img src="img/predzahradky/32 mp/titulka/20220421_105030.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_32.html">32 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_31.html"><img src="img/predzahradky/31 mp/titulka/05.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_31.html">31 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_30.html"><img src="img/predzahradky/30 mp/30 mp - titulka/15.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_30.html">30 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_29.html"><img src="img/predzahradky/29 mp/29 mp - titulka/20210727_093718.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_29.html">29 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_28.html"><img src="img/predzahradky/28 mp/28 mp - titulka/20210901_153236.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_28.html">28 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_27.html"><img src="img/predzahradky/27 mp/27 mp - titulka/IMG_20210506_124625_9.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_27.html">27 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_26.html"><img src="img/predzahradky/26 mp/26 mp - titulka/IMG_9203.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_26.html">26 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_25.html"><img src="img/predzahradky/25 mp/25 mp - titulka/IMG_20190613_084321.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_25.html">25 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_24.html"><img src="img/predzahradky/24 mp/24 mp - titulka/IMG_4879.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_24.html">24 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_23.html"><img src="img/predzahradky/23 mp/23 mp - titulka/IMG_20181025_131922.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_23.html">23 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_22.html"><img src="img/predzahradky/22 mp/22 mp - titulka/IMG_2040.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_22.html">22 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_21.html"><img src="img/predzahradky/21 mp/21 mp - titulka/IMG_20170608_121426.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_21.html">21 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_20.html"><img src="img/predzahradky/20 mp/20 mp - titulka/IMG_0093.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_20.html">20 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_19.html"><img src="img/predzahradky/19 mp/19 mp - titulka/20170906_143147.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_19.html">19 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_18.html"><img src="img/predzahradky/18 mp/18 mp - titulka/P8150026.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_18.html">18 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_17.html"><img src="img/predzahradky/17 mp/17 mp - titulka/251020162148.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_17.html">17 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_16.html"><img src="img/predzahradky/16 mp/16 mp - titulka/Photo8276.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_16.html">16 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_15.html"><img src="img/predzahradky/15 mp/15 mp - titulka/P7140320.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_15.html">15 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_14.html"><img src="img/predzahradky/14 mp/14 mp - titulka/IMG_20170711_102426.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_14.html">14 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_13.html"><img src="img/predzahradky/13 mp/13 mp - titulka/P9290108.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_13.html">13 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_12.html"><img src="img/predzahradky/12 mp/12 mp - titulka/P9120104.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_12.html">12 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_11.html"><img src="img/predzahradky/11 mp/11 mp - titulka/P5100511.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_11.html">11 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_10.html"><img src="img/predzahradky/10 mp/10 mp - titulka/P4290204.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_10.html">10 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_09.html"><img src="img/predzahradky/09 mp/09 mp - titulka/P7140012.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_09.html">9 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_08.html"><img src="img/predzahradky/08 mp/08 mp - titulka/PA010071.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_08.html">8 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda" style="height: 350.9px;">
+                    <a href="predzahradky-zahradka_07.html"><img src="img/predzahradky/07 mp/07 mp - titulka/0715mp.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_07.html">7 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_06.html"><img src="img/predzahradky/06 mp/06 mp - tituka/P6090001.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_06.html">6 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_05.html"><img src="img/predzahradky/05 mp/05 mp - titulka/P8120160.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_05.html">5 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_04.html"><img src="img/predzahradky/04 mp/04 mp - titulka/P4240019.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_04.html">4 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_03.html"><img src="img/predzahradky/03 mp/03 mp - titulka/0306mp.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_03.html">3 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_02.html"><img src="img/predzahradky/02 mp/02 mp - titulka/PA130157.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_02.html">2 - menší projekt</a>
+                    </p>
+                </div>
+                <div class="predzahradky-trieda">
+                    <a href="predzahradky-zahradka_01.html"><img src="img/predzahradky/01 mp/01 mp - tituka/P4190191.jpg" alt="predzáhradka"></a>
+                    <p>
+                        <a href="predzahradky-zahradka_01.html">1 - menší projekt</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

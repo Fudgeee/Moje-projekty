@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div id="rodinne">
+                <h1>Kompletné realizácie záhrad rodinných domov</h1>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_41.html"><img src="img/rodinne/41 Zahrada/titulka/20231006_153426.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_41.html">42 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_40.html"><img src="img/rodinne/40 Zahrada/40 zahrada - tituka/05.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_40.html">41 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_39.html"><img src="img/rodinne/39 Zahrada/39 zahrada - tituka/20230620_194533.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_39.html">40 - kompletná realizácia</a>
+                    </p>
+                </div><div class="rodinne-domy">
+                    <a href="rodinne-zahrada_38.html"><img src="img/rodinne/38 Zahrada/38 zahrada - tituka/10.jpg">
+                        <a href="rodinne-zahrada_38.html">39 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_37.html"><img src="img/rodinne/37 Zahrada/titulka/20220503_134006.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_37.html">38 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_36.html"><img src="img/rodinne/36 Zahrada/36 zahrada - titulka/P4120087.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_36.html">37 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_35.html"><img src="img/rodinne/35 Zahrada/35 zahrada - tituka/IMG_20211020_144013.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_35.html">36 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_34.html"><img src="img/rodinne/34 Zahrada/34 zahrada - titulka/IMG_20210625_172126_5.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_34.html">35 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_33.html"><img src="img/rodinne/33 Zahrada/33 zahrada - tituka/IMG_9034.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_33.html">34 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_32.html"><img src="img/rodinne/32 Zahrada/32 zahrada - titulka/IMG_6208.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_32.html">33 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_31.html"><img src="img/rodinne/31 Zahrada/31 zahrada - titulka/IMG_20210616_201225_2.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_31.html">32 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_30.html"><img src="img/rodinne/30 Zahrada/30 zahrada - titulka/IMG_20190626_111516.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_30.html">31 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_29.html"><img src="img/rodinne/29 Zahrada/29 zahrada - titulka/IMG_20190509_094034.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_29.html">30 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_28.html"><img src="img/rodinne/28 Zahrada/28 zahrada - titulka/IMG_0399.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_28.html">29 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_27.html"><img src="img/rodinne/27 Zahrada/27 zahrada - titulka/IMG_20180618_133437.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_27.html">28 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_26.html"><img src="img/rodinne/26 Zahrada/26 zahrada - titulka/P6190093.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_26.html">27 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy" style="height:350.5px">
+                    <a href="rodinne-zahrada_25.html"><img src="img/rodinne/25 Zahrada/25 zahrada - titulka/IMG_20190930_102327.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_25.html">26 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_24.html"><img src="img/rodinne/24 Zahrada/24 zahrada - titulka/IMG_20170711_091929_1.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_24.html">25 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_23.html"><img src="img/rodinne/23 Zahrada/23 zahrada - titulka/P6160436.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_23.html">24 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_22.html"><img src="img/rodinne/22 Zahrada/22 zahrada - titulka/P6020152.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_22.html">23 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_21.html"><img src="img/rodinne/21 Zahrada/21 zahrada - tituka/P5110362.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_21.html">22 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_20.html"><img src="img/rodinne/20 Zahrada/20 zahrada - titulka/P5120385.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_20.html">21 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_19.html"><img src="img/rodinne/19 Zahrada/19 zahrada - titulka/1914zahrada.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_19.html">20 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_18.html"><img src="img/rodinne/18 Zahrada/18 zahrada - titulka/P7010334.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_18.html">19 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_17.html"><img src="img/rodinne/17 Zahrada/17 zahrada - titulka/P5290405.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_17.html">18 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_16.html"><img src="img/rodinne/16 Zahrada/16 zahrada - titulka/P4220051.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_16.html">17 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_15.html"><img src="img/rodinne/15 Zahrada/15 Zahrada - titulka/PA140010.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_15.html">16 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_14.html"><img src="img/rodinne/14 Zahrada/14 zahrada - titulka/P5110346.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_14.html">15 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_13.html"><img src="img/rodinne/13 Zahrada/13 zahrada - titulka/IMG_3205.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_13.html">14 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_12.html"><img src="img/rodinne/12 Zahrada/12 zahrada - titulka/P9050325.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_12.html">13 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_11.html"><img src="img/rodinne/11 Zahrada/11 zahrada - titulka/P9170205.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_11.html">12 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_10.html"><img src="img/rodinne/10 Zahrada/10 zahrada - titulka/P5250684.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_10.html">11 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_09.html"><img src="img/rodinne/09 Zahrada/09 zahrada - titulka/P8300011.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_09.html">10 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_08.html"><img src="img/rodinne/08 Zahrada/08 zahrada - titulka/P6190041.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_08.html">9 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_07.html"><img src="img/rodinne/07 Zahrada/07 zahrada - titulka/P6150037.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_07.html">8 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_06.html"><img src="img/rodinne/06 Zahrada/06 zahrada - titulka/0613zahrada.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_06.html">7 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_05.html"><img src="img/rodinne/05 Zahrada/05 zahrada - tituka/P8120144.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_05.html">6 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_04.html"><img src="img/rodinne/04 Zahrada/04 zahrada - titulka/P6080172.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_04.html">5 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_03.html"><img src="img/rodinne/03 Zahrada/03 zahrada - titulka/P8200061.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_03.html">4 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_02.html"><img src="img/rodinne/02 Zahrada/02 zahrada - titulka/P9110121.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_02.html">3 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_01.html"><img src="img/rodinne/01 Zahrada/01 zahrada - titulka/P6290238.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_01.html">2 - kompletná realizácia</a>
+                    </p>
+                </div>
+                <div class="rodinne-domy">
+                    <a href="rodinne-zahrada_00.html"><img src="img/rodinne/00 Zahrada/00 zahrada - titulka/P5280370.jpg" alt="záhrada"></a>
+                    <p>
+                        <a href="rodinne-zahrada_00.html">1 - kompletná realizácia</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const images = document.querySelectorAll('.clickable-image');
+                const enlargedView = document.createElement('div');
+                enlargedView.classList.add('enlarged');
+                let enlarged = false;
+        
+                document.body.appendChild(enlargedView);
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        enlargedView.innerHTML = '';
+                        enlarged = !enlarged;
+        
+                        if (enlarged) {
+                            const clone = image.cloneNode(true);
+                            clone.style.height = 'auto';
+                            enlargedView.appendChild(clone);
+                            enlargedView.style.opacity = 1;
+                            enlargedView.style.pointerEvents = 'auto';
+        
+                            // Přidáme tlačítko zavírání do zvětšeného pohledu
+                            const closeButton = document.createElement('div');
+                            closeButton.classList.add('close-button');
+                            closeButton.innerHTML = '&times;';
+                            enlargedView.appendChild(closeButton);
+        
+                            // Přidáme událost kliknutí na tlačítko zavírání
+                            closeButton.addEventListener('click', () => {
+                                enlargedView.style.opacity = 0;
+                                enlargedView.style.pointerEvents = 'none';
+                                enlarged = false;
+                            });
+        
+                            // Přidáme událost kliknutí mimo zvětšený pohled
+                            enlargedView.addEventListener('click', (event) => {
+                                if (event.target === enlargedView) {
+                                    enlargedView.style.opacity = 0;
+                                    enlargedView.style.pointerEvents = 'none';
+                                    enlarged = false;
+                                }
+                            });
+                        } else {
+                            enlargedView.style.opacity = 0;
+                            enlargedView.style.pointerEvents = 'none';
+                        }
+                    });
+                });
+            });
+        </script>  
+        <main id="vysadba">
+            <h1>DREVINY VÁM NAVRHNEME, ZABEZPEČÍME, VYSADÍME AJ OŠETRÍME</h1>
+            <div class="medzera1"></div>
+            <div class="graficka-studia1">
+                <img src="img/vysadba/07.jpg" alt="Vysadba" class="clickable-image">
+            </div>
+            <div class="graficka-studia1">
+                <img src="img/vysadba/08.jpg" alt="Vysadba" class="clickable-image">
+            </div>
+            <div class="graficka-studia1">
+                <img src="img/vysadba/09.jpg" alt="Vysadba" class="clickable-image">
+            </div>
+            <p>Okrasné dreviny dodávané našou firmou sú zo špecializovaných certifikovaných škôlok buď od slovenských pestovateľov alebo z dovozu vrámci EU. Na všetok nami dodávaný rastlinný materiál, ktorý vysádzame v rámci našich realizácií poskytujeme zákazníkovi záruku na životaschopnosť rastlín po výsadbe. Okrasné dreviny a stromy, ktoré plánujeme a následne vysádzame sú vyberané s ohľadom na vysokú kvalitu rastlinného materiálu. Už pri samotných návrhoch okrasných výsadieb zohľadňujeme budúce stanovište rastlín, klimtické požiadavky, maximálnu možnú udržateľnosť výsadby do budúcnosti, ale i celkový vizuálny, či praktický aspekt novovysadených rastlín.  Zákazníkom ponúkame moderné riešenia efektných okrasných výsadieb s použitím širokého sortimentu kvalitných nových i pôvodných druhov rastlín a sadovníckeho materiálu. Pri tvorbe okrasných výsadieb sa snažíme, aby záhrada robila svojmu majiteľovi radosť v každom ročnom období...</p>
+            <div class="graficka-studia1">
+                <a href="stromy.html"><img src="img/vysadba/stromy/03ps.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="stromy.html">Výsadby solitérnych a parkových stromov</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="kombinovane-vysadby.html"><img src="img/vysadba/kombinovana vysadba/IMG_3230.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="kombinovane-vysadby.html">Kombinované výsadby okrasných drevín a trvaliek</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="kvet.html"><img src="img/vysadba/kvet/P7050046.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="kvet.html">Kvet v záhrade</a>
+                </p>
+            </div>
+            <div class="medzera1"></div>
+            <h2>Zima v záhrade</h2>
+            <div class="graficka-stud">
+                <img src="img/vysadba/zima/01z.jpg" alt="foto" class="clickable-image">
+                <img src="img/vysadba/zima/02z.jpg" alt="foto" class="clickable-image">
+                <img src="img/vysadba/zima/03z.jpg" alt="foto" class="clickable-image">
+                <img src="img/vysadba/zima/04z.jpg" alt="foto" class="clickable-image">
+                <img src="img/vysadba/zima/05z.jpg" alt="foto" class="clickable-image">
+                <img src="img/vysadba/zima/06z.jpg" alt="foto" class="clickable-image">
+            </div>
+            <div class="medzera1"></div>
+            <h2>Vyvýšené záhony, kvetináčové výsadby</h2>
+            <p>Vyvýšené záhony ponúkajú možné dispozičné riešenie napríklad úžitkovej záhrady i ked je na pozemku veľmi málo miesta. Takéto riešenie pestovania úžitkových ale i okrasných rastlín je vhodné aj pre menšiu fyzickú náročnosť pri pravidelnej údržbe. V neposlednom rade nám takto úpravený „kúsok pozemku“ napríklad úžitkovej záhrady nepôsobí rušivo a dokážeme ho ľahšie udržať bez plevelov.</p>
+            <div class="graficka-studia1">
+                <a href="zahon1.html"><img src="img/vysadba/zahon1/titulka/IMG_20200423_110655_2.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="zahon1.html">Vyvýšené záhony 1</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="zahon2.html"><img src="img/vysadba/zahon2/titulka/IMG_20200604_150047_3.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="zahon2.html">Vyvýšené záhony 2</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="zahon3.html"><img src="img/vysadba/zahon3/titulka/0307vv.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="zahon3.html">Vyvýšené záhony 3</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="zahon4.html"><img src="img/vysadba/zahon4/titulka/03.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="zahon4.html">Vyvýšené záhony 4</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="zahon5.html"><img src="img/vysadba/zahon5/titulka/06.jpg" alt="vysadba"></a>
+                <p>
+                    <a href="zahon5.html">Vyvýšené záhony 5</a>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

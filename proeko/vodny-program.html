@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const images = document.querySelectorAll('.clickable-image');
+                const enlargedView = document.createElement('div');
+                enlargedView.classList.add('enlarged');
+                let enlarged = false;
+        
+                document.body.appendChild(enlargedView);
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        enlargedView.innerHTML = '';
+                        enlarged = !enlarged;
+        
+                        if (enlarged) {
+                            const clone = image.cloneNode(true);
+                            clone.style.height = 'auto';
+                            enlargedView.appendChild(clone);
+                            enlargedView.style.opacity = 1;
+                            enlargedView.style.pointerEvents = 'auto';
+        
+                            // Přidáme tlačítko zavírání do zvětšeného pohledu
+                            const closeButton = document.createElement('div');
+                            closeButton.classList.add('close-button');
+                            closeButton.innerHTML = '&times;';
+                            enlargedView.appendChild(closeButton);
+        
+                            // Přidáme událost kliknutí na tlačítko zavírání
+                            closeButton.addEventListener('click', () => {
+                                enlargedView.style.opacity = 0;
+                                enlargedView.style.pointerEvents = 'none';
+                                enlarged = false;
+                            });
+        
+                            // Přidáme událost kliknutí mimo zvětšený pohled
+                            enlargedView.addEventListener('click', (event) => {
+                                if (event.target === enlargedView) {
+                                    enlargedView.style.opacity = 0;
+                                    enlargedView.style.pointerEvents = 'none';
+                                    enlarged = false;
+                                }
+                            });
+                        } else {
+                            enlargedView.style.opacity = 0;
+                            enlargedView.style.pointerEvents = 'none';
+                        }
+                    });
+                });
+            });
+        </script>  
+        <main id="jazierka">
+            <h1>JAZIERKO PRESNE PODĽA VAŠEJ PREDSTAVY</h1>
+            <p>Neodmysliteľnou súčasťou okrasných záhrad bývajú často i rôzne vodné záhradné prvky ako jazierka, potoky, kaskády či fontány. Jazierko alebo iná vodná plocha v záhrade môže byť vhodným spestrením záhrad. Správnym navrhnutím, umiestnením a vybudovaním môže jazierko prispieť k celkovej zvýšenej estetickej a zážitkovej hodnoty z okrasnej záhrady ako celku. Pokiaľ má zákazník vzťah k takémuto spestreniu svojej záhrady, môže získať veľmi príjemné miesto na oddych a relax. Ideálne je, ak sa jazierko plánuje už pri zhotovení návrhu záhrady. Vieme ho tak veľmi dobre zakomponovať k ostatným prvkom v záhrade, ako napríklad k výsadbe okrasných drevín, či k možným prechodom vrámci členitejších záhrad. Už pred budovaním jazierka sa môžu tiež s predstihom naplánovať mostíky, posedenia, potoky, kaskády...</p>
+            <h2>Môžete si pozrieť prezentáciu niektorých jazierok z našich realizácií</h2>
+            <div class="medzera1"></div>
+            <div class="graficka-studia1">
+                <a href="jazierko1.html"><img src="img/jazierka/jazierko1/titulka/P4130047.jpg" alt="jazierko"></a>
+                <p>
+                    <a href="jazierko1.html">Jazierko 1</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="jazierko2.html"><img src="img/jazierka/jazierko2/titulka/P6090032.jpg" alt="jazierko"></a>
+                <p>
+                    <a href="jazierko2.html">Jazierko 2</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="jazierko3.html"><img src="img/jazierka/jazierko3/titulka/P4160164.jpg" alt="jazierko"></a>
+                <p>
+                    <a href="jazierko3.html">Jazierko 3</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="jazierko4.html"><img src="img/jazierka/jazierko4/titulka/P6070183.jpg" alt="jazierko"></a>
+                <p>
+                    <a href="jazierko4.html">Jazierko 4</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="jazierko5.html"><img src="img/jazierka/jazierko5/titulka/P6300135.jpg" alt="jazierko"></a>
+                <p>
+                    <a href="jazierko5.html">Jazierko 5</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="jazierko6.html"><img src="img/jazierka/jazierko6/titulka/20210729_120931.jpg" alt="jazierko"></a>
+                <p>
+                    <a href="jazierko6.html">Jazierko 6</a>
+                </p>
+            </div>
+            <div class="medzera1"></div>
+            <p>Už pri plánovaní veľkosti, polohy umiestnenia a účelu pre ktorý bude vodná plocha určená, navrhujeme a dodávame zákazníkovi aj kompletný filtračný a čerpací systém, ktorý udržuje jazierko čisté počas celej sezóny. Dostatočná biologická filtrácia zabezpečuje správnu mikrobiologickú rovnováhu vo vode a zabraňuje tak hnilobným procesom. Okrem samotného filtra a čerpadla býva zvyčajne filtračný systém dodávaný aj s ďaľšími prídavnými zariadeniami, ktoré napomáhajú k udržaniu zdravého a čistého jzierka. Filtrácia može byť doplnená UV lampou, ktorá zabraňuje tvoreniu rias; skimerom – povrchovým zberačom nečistôt; okysličovam vody či iným efektovým čerpadlom alebo led osvetlením. Všetky jazierkové komponenty aj zariadenia dodávame a inštalujeme len vrámci našich realizácií s použitím profesionalnej jazierkovej technológie značky OASE.</p>
+            <div class="graficka-studia1">
+                <img class="clickable-image" src="img/jazierka/01 prietokova filtracia Oase.jpg" alt="jazierko" style="height: 240px;">
+                <p>prietoková filtrácia Oase</p>
+            </div>
+            <div class="graficka-studia1">
+                <img class="clickable-image" src="img/jazierka/02 tlakova filtracia Oase.jpg" alt="jazierko" style="height: 240px;">
+                <p>tlaková filtrácia Oase</p>
+            </div>
+            <div class="graficka-studia1">
+                <img class="clickable-image" src="img/jazierka/03 jazierkove osvetlenie Lunaua led set.jpg" alt="jazierko" style="height: 240px;">
+                <p>jazierkové osvetlenie Lunaua led set</p>
+            </div>
+            <div class="graficka-studia1">
+                <img class="clickable-image" src="img/jazierka/04 plavajuca led fontana Water Starlet.jpg" alt="jazierko" style="height: 240px;">
+                <p>plávajúca led fontána Water Starlet</p>
+            </div>
+            <div class="graficka-studia1">
+                <img class="clickable-image" src="img/jazierka/05 OASE logo.jpg" alt="jazierko" style="height: 240px;">
+            </div>
+            <div class="graficka-studia1">
+                <img class="clickable-image" src="img/jazierka/06 rozmrazovaci plavak Icefree 4 seasons.jpg" alt="jazierko" style="height: 240px;">
+                <p>rozmrazovací plavák Icefree 4 seasons</p>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

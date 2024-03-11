@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div id="firmy">
+                <h1>Firmy a organizácie - referencie</h1>
+                <div class="firmy-trieda">
+                    <p>23. Atlantic Energy Slovakia spol. s.r.o. (r.2021) - výsadba zelene, údržba a servis exteriéru firmy</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>22. Stiano Cafe, Nové Sady (r.2020) – kompletný návrh a realizácia exteriéru reštaurácie -<a href="firmy-firma_22.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>21. Multifunkčné ihrisko ČAB (r.2019) – kompletná realizácia zelene a dopadových plôch -<a href="firmy-firma_21.html">  FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>20. Multifunkčné ihrisko Ľudovítová (r.2019) – výsadba parkových vzrastlých stromov</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>19. Parková zóna pri kaštieli, Nové Sady (r.2017-2021) – jarná údržba a náhradná výsadba zelene</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>18. GCM Nitra (r.2015) – terénne úpravy a vybudovanie ihriska so závlahovým systémom -<a href="firmy-firma_18.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>17. Parková zóna M.D., Nitra (r.2013;2014) – revitalizácia parkovej výsadby a inštalácia závlahového systému -<a href="firmy-firma_17.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>16. Cukráreň KATICA, Horné Saliby (r.2012) – kompletná realizácia exteriéru a zelene pri cukrárni -<a href="firmy-firma_16.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>15. Zdravotné stredisko Lužianky (r.2009;2021) – výsadba okrasnej zelene -<a href="firmy-firma_15.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>14. Marel Food Systems, Drážovce (r.2009) – celoročná údržba zatrávnených plôch a okrasnej zelene</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>13. KV PLAST, Malé Ripnany (r.2008) – výsadba živého plota a údržba zelene</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>12. SKŠ Nitra (r.2007) – náhradná výsadba zelene, okrasná výsadba</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>11. objekt PODKOVA, Nitra (r.2007) – náhradná výsadba zelene a zatrávnenie priľahlých plôch</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>10. GCM Nitra (r.2007) – výsadba okrasných drevín a zatrávnenie areálu -<a href="firmy-firma_10.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>9. EKS, Drážovce (r.2007) – kosenie ruderalneho porastu na ploche 1,5 ha</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>8. Obecné bytovky Čab (r.2007) – terénne úpravy, zemné práce a zatrávnenie prilahlých plôch na ploche 2000 m2 -<a href="firmy-firma_08.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>7. POLYVIA-S spol s.r.o. (r.2006) – zemné práce, výsadba okrasnej zelene a zatrávnenie areálu na ploche 1600 m2 -<a href="firmy-firma_07.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>6. Obecné bytovky Vráble (r.2006) – terénne úpravy, zemné práce a zatrávnenie prilahlých plôch</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>5. Športový areál ČAB (r.2005) – založenie ihriskového trávnika na ploche 4000 m2</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>4. BOURBON FABI SK s.r.o. (r.2005) – terénne úpravy a zatrávnenie areálu firmy na ploche 6400 m2 -<a href="firmy-firma_04.html"> FOTO</a></p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>3. SPP a.s. Nitra, Levická ul. (r.2005) – celeročná kompletná údržba a upratovacie práce exteriéru firmy</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>2. METRO Nitra (r.2004) – rekonštrukcia a nová výsadba v parkovacej zóne obchodného domu</p>
+                </div>
+                <div class="firmy-trieda">
+                    <p>1. M.L.Z., Ivánka pri Nitre (r.2003) – výsadba okrasných drevín pred firmenou predajňou</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

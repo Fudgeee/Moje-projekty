@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const images = document.querySelectorAll('.clickable-image');
+                const enlargedView = document.createElement('div');
+                enlargedView.classList.add('enlarged');
+                let enlarged = false;
+        
+                document.body.appendChild(enlargedView);
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        enlargedView.innerHTML = '';
+                        enlarged = !enlarged;
+        
+                        if (enlarged) {
+                            const clone = image.cloneNode(true);
+                            clone.style.height = 'auto';
+                            enlargedView.appendChild(clone);
+                            enlargedView.style.opacity = 1;
+                            enlargedView.style.pointerEvents = 'auto';
+        
+                            // Přidáme tlačítko zavírání do zvětšeného pohledu
+                            const closeButton = document.createElement('div');
+                            closeButton.classList.add('close-button');
+                            closeButton.innerHTML = '&times;';
+                            enlargedView.appendChild(closeButton);
+        
+                            // Přidáme událost kliknutí na tlačítko zavírání
+                            closeButton.addEventListener('click', () => {
+                                enlargedView.style.opacity = 0;
+                                enlargedView.style.pointerEvents = 'none';
+                                enlarged = false;
+                            });
+        
+                            // Přidáme událost kliknutí mimo zvětšený pohled
+                            enlargedView.addEventListener('click', (event) => {
+                                if (event.target === enlargedView) {
+                                    enlargedView.style.opacity = 0;
+                                    enlargedView.style.pointerEvents = 'none';
+                                    enlarged = false;
+                                }
+                            });
+                        } else {
+                            enlargedView.style.opacity = 0;
+                            enlargedView.style.pointerEvents = 'none';
+                        }
+                    });
+                });
+            });
+        </script>
+        <main id="cennik">
+            <h1>VŠETKO PRE VAŠU ZÁHRADU – OD NÁVRHU PO REALIZÁCIU</h1>
+            <div class="medzera1"></div>
+            <p><b>Zaoberáme sa</b> navrhovaním, realizáciou a údržbou okrasných záhrad, firemných pozemkov a verejnej zelene. Svoje odborné záhradnícke služby ponúkame naším zákazníkom už od roku 2003. Svoju činnosť sme začali otvorením živnosti Juraj Brezniak - PROEKO. V priebehu rokov sme rozšírili sortiment našich činností a služieb, a rozhodli sme sa založiť spoločnosť PROEKO ZÁHRADY s.r.o. Naša rodinná firma dnes ponúka všetkým potencionálnym zákazníkom kompletné riešenie ich exteriéru, od grafického návrhu, cez terénne úpravy až po realizáciu zelene a jej následnú údržbu.</p>
+            <p><b>Našou snahou je</b> mať so zákazníkom vždy korektný vzťah. Preto bez osobnej obhliadky pozemku neposkytujeme telefonicky ani emailom žiadne predbežné cenové odhady ani možné orientačné ceny. Predídeme tak rôznym neskorším nedorozumeniam a nezrovnalostiam, nakoľko každá realizácia záhrady je osobitá a jedinečná; … „to čo zaplatil sused za záhradu, nemusí stáť rovnaké financie aj Vás“...</p>
+            <div class="graficka-studia1">
+                <img src="img/portfolio_a_cennik/01.jpg" class="clickable-image" alt="Foto">
+            </div>
+            <div class="graficka-studia1">
+                <img src="img/portfolio_a_cennik/02.jpg" class="clickable-image" alt="Foto">
+            </div>
+            <div class="graficka-studia1">
+                <img src="img/portfolio_a_cennik/03.jpg" class="clickable-image" alt="Foto">
+            </div>
+            <div class="medzera2"></div>
+            <p><b class="bsize">Ponúkané služby v skratke:</b></p>
+            <p>- grafické a finančné spracovanie návrhu záhrady <br>
+                - odborné poradenstvo a konzultácie, dozorovanie prác <br>
+                - kompletné realizácie okrasných záhrad na kľúč cca. do 500 m2 <br>
+                - zakladanie trávnikov ukladaním trávových kobercov alebo výsevom <br>
+                - realizácie automatických závlahových systémov <br>
+                - výsadby okrasných drevín a trvalkových záhonov <br>
+                - výsadby vzrastlých, solitérnych a parkových stromov <br>
+                - zhotovenie skaliek, kaskád, terás, vyvýšených záhonov <br>
+                - realizácia záhradného automatického led osvetlenia <br>
+                - vybudovanie záhradných jazierok a vodných prvkov <br>
+                - dodávka a montáž umelých trávnikov, športových povrchov, ihrísk <br>
+                - dodanie a osadenie rôznych dekoračných záhradných prvkov <br>
+                - rekonštrukcie a revitalizácie starších záhrad <br>
+                - celoročné odborné údržby okrasných záhrad a verejnej zelene <br>
+                - záručný a pozáručný servis dodaných technológií <br>
+                - stavebné práce a úpravy menšieho rozsahu <br>
+                - zabezpečenie a dovoz potrebného materiálu s nákladou dopravou <br>
+                - hrubé zemné a terénne úpravy so zabezpečením ťažkej mechanizácie
+                </p>
+            <div class="medzera1"></div>
+            <p><b class="bsize">Cenník základných služieb:</b></p>
+            <p><b>od 20 Eur</b> - oficiálne rozpočtovanie zákazok, spracovanie ponúk – bez grafického návrhu</p>
+            <p><b>od 30 Eur</b> - odborné poradenstvo, konzultácie, obhliadky pozemkov, dozorovanie prác + dopravné náklady na pozemok zákazníka</p>
+            <p><b>od 40 Eur</b> - servisný technik - závlahové systémy, led osvetlenie, jazierkové technológie + použitý materiál + dopravné náklady na pozemok zákazníka</p>
+            <p><b>od 50 Eur</b> - zameranie pozemku, vytyčovacie práce, projekčná práca v teréne + použitý materiál + dopravné náklady na pozemok zákazníka</p>
+            <p><b>od 70 Eur</b> - <a href="zavlaha.html" class="a-hover"><span style="color:red">návrh automatického závlahového systému</span></a> v 2D pôdoryse + súpis materiálových položiek – cena sa upresní po osobnej obhliadke záhrady, podľa veľkosti pozemku a zložitosti spracovania návrhu</p>
+            <p><b>od 300 Eur</b> – <a href="graficke-navrhy.html" class="a-hover"><span style="color:red">grafická pracovná štúdia záhrady</span></a> + príplatkové položky – cena sa upresní po osobnej obhliadke záhrady, podľa veľkosti pozemku a zložitosti spracovania návrhu</p>
+            <p><b>od 400 Eur</b> – <a href="graficke-navrhy.html" class="a-hover"><span style="color:red">grafická štúdia záhrady s podrobnou dokumentáciou</span></a> + príplatkové položky – cena sa upresní po osobnej obhliadke záhrady, podľa veľkosti pozemku a zložitosti spracovania návrhu</p>
+            <p><b>individuálne</b> – kompletné realizácie záhrad „na kľúč“ – cena za dielo</p>
+            <p><b>individuálne</b> – odborné údržby a iné záhradníke služby – cena za dielo</p>
+			<p><b>individuálne</b> – zabezpečenie materiálových položiek, presun mechanizácie a náradia, logistické a dopravné náklady súvisiace s realizáciou</p>
+			<p><b>individuálne</b> – dopravné náklady na pozemok zákazníka – nákladná doprava nad 3,5 t (externý prepravca – nakládka – zákazník - vykládka a späť)</p>
+            <br>
+            <p><b class="bsize">Poznámky k službám a cenníku:</b></p>
+            <p><b>Platnosť</b> - všetky uvedené ceny sú platné k 01.02.2024; zmena cien je vyhradená do začiatku realizácie</p>
+            <p><b>Daň</b> - nie sme platcami DPH</p>
+            <p><b>Hodinová sadzba</b> - pri hodinovej sadzbe za základné služby účtujeme po prvej hodine každú ďalšiu začatú polhodinu.</p>
+            <p><b>Cena za dielo (realizácia / údržba)</b> sa oceňuje vždy individuálne až na základe osobnej obhliadky a konzultácie so zákazníkom s prihliadnutím na osobitné požiadavky, náročnosť plánovaných prác a potrebných materiálových položiek.</p>
+            <p><b>Prvá konzultácia</b> u zákazníka na pozemku nezahŕňa projekčnú prácu ani dispozičné riešenie či možné kultivárové osadenie rastlinami. Na prvej konzultácii sa oboznámime s terénom a hlavne Vašimi požiadavkami, vieme v krátkosti odporučiť postup prác, technické a agrotechnické podmienky pre riešenie realizácie, pomenovať možné problematické prvky v záhrade, prípadne materiálové požiadavky pre následnú realizáciu a pod. Všetky ostatné a konkrétne detaily sa už potom riešia v samotnom grafickom návrhu - štúdii záhrady a počas súvisiacich konzultáciách so zákazníkom.</p>
+            <p><b>Vyššie uvedené ceny za grafické štúdie 300,- resp. 400,- Eur sú minimálne, základné a orientačné!</b> Reálna cena za spracovanie 3D grafickej pracovnej štúdie sa upresní individuálne po prvej osobnej obhliadke na pozemku a pri prvej konzultácií so zákazníkom. Po vypočutí si základných požiadaviek a predstáv zákazníka ohľadom realizácie, a zistení možného dispozičnom riešenia pozemku či záhrady, už vieme cenu za spracovanie štúdie záhrady stanoviť presne. Po zohľadnení všetkých faktorov a tiež v závislosti od náročnosti spracovania grafickej štúdie, veľkosti a členitosti riešeného pozemku – určíme vopred záväznú cenu za spracovanie 3D grafickej pracovnej štúdie záhrady. Všetky prípadné možné náklady navyše budú zákazníkovi vopred oznámené a bude o nich včas informovaný.</p>
+            <p><b>Prezentácie grafických štúdií</b> sa robia v rámci konzultácií so zákazníkom na počítači v 3D perspektíve a v dynamickej vizualizácii. Zákazník môže tak svoju „novú záhradu“ vidieť v reálnom priestorovom a farebnom vyobrazení.</p>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

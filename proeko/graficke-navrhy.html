@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const images = document.querySelectorAll('.clickable-image');
+                const enlargedView = document.createElement('div');
+                enlargedView.classList.add('enlarged');
+                let enlarged = false;
+        
+                document.body.appendChild(enlargedView);
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        enlargedView.innerHTML = '';
+                        enlarged = !enlarged;
+        
+                        if (enlarged) {
+                            const clone = image.cloneNode(true);
+                            clone.style.height = 'auto';
+                            enlargedView.appendChild(clone);
+                            enlargedView.style.opacity = 1;
+                            enlargedView.style.pointerEvents = 'auto';
+        
+                            // Přidáme tlačítko zavírání do zvětšeného pohledu
+                            const closeButton = document.createElement('div');
+                            closeButton.classList.add('close-button');
+                            closeButton.innerHTML = '&times;';
+                            enlargedView.appendChild(closeButton);
+        
+                            // Přidáme událost kliknutí na tlačítko zavírání
+                            closeButton.addEventListener('click', () => {
+                                enlargedView.style.opacity = 0;
+                                enlargedView.style.pointerEvents = 'none';
+                                enlarged = false;
+                            });
+        
+                            // Přidáme událost kliknutí mimo zvětšený pohled
+                            enlargedView.addEventListener('click', (event) => {
+                                if (event.target === enlargedView) {
+                                    enlargedView.style.opacity = 0;
+                                    enlargedView.style.pointerEvents = 'none';
+                                    enlarged = false;
+                                }
+                            });
+                        } else {
+                            enlargedView.style.opacity = 0;
+                            enlargedView.style.pointerEvents = 'none';
+                        }
+                    });
+                });
+            });
+        </script>  
+        <main id="graficke-navrhy">
+            <h1>AKO BUDE VYZERAŤ VAŠA NOVÁ ZÁHRADA ?</h1>
+            <p>Po obhliadke pozemku a vypočutí si približnej predstavy zákazníka o jeho budúcej okrasnej záhrade, navrhneme najvhodnejšie riešenie výsadby drevín, trávnikov ale i iných záhradných, či stavebných úprav, ako sú jazierko, kvetinové záhony, skalky, závlahový systém, záhradné osvetlenie, drevostavby, bazén a iné. Po následnom zameraní, spracovaní návrhu a po ďalších upresňujúcich konzultáciách, dodáme zákazníkovi finálny grafický návrh záhradných úprav, ktorý bude spracovaný originálne a s individuálnym prístupom. Pri tvorbe návrhu samozrejme berieme ohľad na požiadavky a praktické potreby zákazníka, ale aj na vhodnosť drevín a ostatných záhradných doplnkov do daného prostredia, prípadne už jestvujúcej výsadby pri rekonštrukcii záhrady. Snažíme sa navrhnúť výsadbu tak, aby bola v budúcnosti starostlivosť o ňu čo najmenej náročná.</p>
+            <div class="graficka-studia">
+                <img src="img/graficka_studia/foto kolaz/07.jpg" alt="Foto" class="clickable-image">
+            </div>
+            <div class="graficka-studia">
+                <img src="img/graficka_studia/foto kolaz/08.jpg" alt="Foto" class="clickable-image">
+            </div>
+            <div class="graficka-studia" style="margin-bottom: 2rem;">
+                <img src="img/graficka_studia/foto kolaz/09.jpg" alt="Foto" class="clickable-image">
+            </div>
+            <p>Vďaka naším dlhoročným skúsenostiam v oblasti realizácií okrasných záhrad, výsadieb a údržieb zelene, riešime naše grafické návrhy s prihliadnutím aj na praktickú stránku samotnej realizácie záhrady, jej funkčnosť a udržateľnosť do budúcnosti. Tým je zaručená odborná aj praktická stránka navrhovaného diela.</p>
+            <h2 class="druha">Pozývame Vás k nahliadnutiu na niekoľko našich grafických štúdií záhrad:</h2>
+            <div class="medzera1"></div>
+            <div class="graficka-studia">
+                <a href="graficka-studia_01.html"><img src="img/graficka_studia/01 graficka studia/01 gn -titulka/15 skica - perspektiva.jpg" alt="graficka_studia"></a>
+                <p id="par">
+                    <a href="graficka-studia_01.html">01 grafická štúdia</a>
+                </p>
+            </div>
+            <div class="graficka-studia">
+                <a href="graficka-studia_02.html"><img src="img/graficka_studia/02 graficka studia/02 gn - titulka/09-3d.bmp" alt="graficka_studia"></a>
+                <p id="par">
+                    <a href="graficka-studia_02.html">02 grafická štúdia</a>
+                </p>
+            </div>
+            <div class="graficka-studia">
+                <a href="graficka-studia_03.html"><img src="img/graficka_studia/03 graficka studia/03 gn -titulka/10 skica.jpg" alt="graficka_studia"></a>
+                <p id="par">
+                    <a href="graficka-studia_03.html">03 grafická štúdia</a>
+                </p>
+            </div>
+            <div class="graficka-studia">
+                <a href="graficka-studia_04.html"><img src="img/graficka_studia/04 graficka studia/05 gn - titulka/studia 7.jpg" alt="graficka_studia"></a>
+                <p id="par">
+                    <a href="graficka-studia_04.html">04 grafická štúdia</a>
+                </p>
+            </div>
+            <div class="graficka-studia">
+                <a href="graficka-studia_05.html"><img src="img/graficka_studia/05 graficka studia/05 gn -titulka/perspektiva 3D 9.jpg" alt="graficka_studia"></a>
+                <p id="par">
+                    <a href="graficka-studia_05.html">05 grafická štúdia</a>
+                </p>
+            </div>
+            <div class="graficka-studia">
+                <a href="graficka-studia_06.html"><img src="img/graficka_studia/06 graficka studia/06 gn -titulka/perspektiva 3D 1.jpg" alt="graficka_studia"></a>
+                <p id="par">
+                    <a href="graficka-studia_06.html">06 grafická štúdia</a>
+                </p>
+            </div>
+            <div class="medzera1"></div>
+            <p>Samotnému spracovaniu grafickej štúdie predchádza oslovenie našej firmy budúcim zákazníkom a dohodnutie si spoločného stretnutia na pozemku. Prvým úkonom z našej strany je osobná obhliadka pozemku a s tým súvisiaca aj prvá konzultácia so zákazníkom a základné poradenstvo k problematike, s vypočutím si základnej predstavy a hlavných požiadaviek zo strany zákazníka. Následne sa požiadavky zákazníka, naše nápady a odporúčania snažíme zakomponovať do originálne grafického návrhu záhrady.</p>
+            <p>Vyhotovenie grafického návrhu záhrady ponúkame v dvoch variantách spracovania, ktoré sa od seba odlišujú podrobnosťou spracovania, množstom príslušnej dokumentácie a samozrejme aj konečnou cenou za grafický návrh.</p>
+            <p>A) Grafický návrh spracovaný vo forme: Grafická pracovná štúdia - „základný balík“</p>
+            <p>B) Grafický návrh spracovaný vo forme: Grafický návrh s podrobnou dokumentáciou</p>
+            <div class="medzera1"></div>
+            <h3>A) Grafická pracovná štúdia - „základný balík“</h3>
+            <p>1) zameranie pozemku, záhrady a existujúcich priľahlých stavieb, fotodokumentácia plôch a stavebných prvkov – cena sa upresní individuálne v závislosti od náročnosti prác</p>
+            <p>2) konzultácia so zákazníkom v teréne počas zamerania pozemku, dopravné náklady na pozemok zákazníka – cena sa upresní individuálne od časovej náročnosti konzultácií a dopravné náklady sa určia podľa vzdialenosti zákazníka od sídla firmy</p>
+            <p>3) zhotovenie grafickej pracovnej štúdie záhrady – farebnej 3D vizualizácie – v rovine: pôdorys so základnou legendou + hlavné pohľady na pozemok v axonometrii a perspektíve – z rôznych uhľov pohľadu</p>
+            <p>4) spracovanie kompletnej rozpočtovej kalkulácie za plánovanú realizáciu firmou Proeko Záhrady s.r.o. – práce a materiál podľa dohody, vrátane rozpočtu za automatický závlahový systém</p>
+            <p>5) konzultácia so zákazníkom (v Čabe – v sídle firmy) – prezentácia nášho prvotného návrhu, možné dispozičné riešenie, použité materiály, navrhovaný postup prác, plánované technické prvky, problematické časti pozemku – možné riešenia...</p>
+            <p>6) finálna korektúra návrhu 1x (podľa požiadaviek a pripomienok zákazníka) a spracovanie konečnej verzie 3D pracovnej štúdie záhrady 1x + kompletná rozpočtová kalkulácia za dielo + ponuka s textovou dokumentáciou</p>
+            <p>7) odovzdanie návrhu štúdie záhrady v digitálnej forme na CD alebo USB disku, prípadne formou e-mailu (poštou alebo osobne)</p>
+            <div class="medzera1"></div>
+            <h3>B) Grafický návrh s podrobnou dokumentáciou - „príplatkové položky“</h3>
+            <p>1) modelácia terénu a svahovanie – zapracovanie výškových rozdielov na pozemku do 3D grafického návrhu s následným vyobrazením</p>
+            <p>2) podrobný zoznam a názvoslovie navrhovaných rastlín s osadzovacím a vytyčovacím plánom</p>
+            <p>3) inventarizácia pôvodných rastlín (ak také sú), a ak budú zachované v novej výsadbe a ich zapracovanie do návrhu výsadby</p>
+            <p>4) zameranie a vypracovanie nového návrhu štúdie pre zhotovenie dlažby, chodníkov, iných spevnených plôch, prípadne iných stavebných častí - oplotenie, múriky, palisády, parkovisko, drevostavby, detské ihrisko (prvky ktoré neexistujú na pozemku a treba ich navrhnúť a zapracovať do 3D grafického návrhu)</p>
+            <p>5) zvýšené dopravné náklady na pozemok zákazníka – vzdialenejšie pozemky od sídla firmy</p>
+            <p>6) odborné konzultácie a poradenstvo naviac + dopravné náklady na pozemok zákazníka – naviac mimo "základného balíka" – častejšie potrebné konzultácie na pozemku zákazníka</p>
+            <p>7) ďalšie dodatočné korektúry štúdie návrhu a zhotovenie viacerých verzií (variánt) možného dispozičného riešenia záhrady – naviac mimo "základného balíka" – bude zákazníkovi doúčtované a nacenené samostatne – podľa rozsahu a zložitosti požiadaviek zo strany zákazníka</p>
+            <div class="medzera1"></div>
+            <p><b>Grafická pracovná štúdia v "základnom balíku"</b> je lacnejšia približne o tretinu oproti kompletnej grafickej štúdie záhrady s podrobnou dokumentáciou. Grafický návrh záhrady spracovaný na úrovni pracovnej štúdie má pre zákazníka informatívny charakter o možnom dispozičnom riešení okrasnej záhrady. Takáto pracovná štúdia záhrady obsahuje: pôvodnú fotodokumentáciu pozemku, navrhované priestorové 3D grafické vyobrazenia záhrady, pôdorys štúdie so základnou legendou a sprievodnú správu. Pracovná štúdia však neobsahuje podrobnú textovú dokumentáciu a výkresovú dokumentáciu k návrhu záhrady. Je tiež bez označených plôch, výmer, osadzovacieho plánu výsadby a grafického návrhu závlahy. Pre samotnú realizáciu záhrady sa táto štúdia považuje za záväznú hlavne v zmysle navrhovaného tvaru trávnika, záhonov a množstvu, či farebnosti vyobrazených rastlín. Takúto pracovnú štúdiu záhrady preto zákazník nemôže zamieňať alebo považovať za projekt záhrady!</p>
+            <p>Grafická pracovná štúdia záhrady býva zväčša spracovaná v zmysle spoločných konzultácii so zákazníkom, za účelom čo najpresnejšieho vyhotovenia cenovej ponuky za realizáciu záhrady a pre bližšiu predstavu zákazníka o možných dispozičných a sadových riešeniach záhrady. Takáto pracovná štúdia je vhodná hlavne pre zákazníka, ktorý nevyžaduje striktne použitie konkrétnych druhov a kultivarov rastlín a drevín pri následnej realizácii. Po spoločných konzultáciách sa dohodneme so zákazníkom na tvare a charaktere výsadby, záhonov a ostatných prvkov v záhrade. Zákazník nám dá ako realizátorom "voľnú ruku" pri tvorbe jeho záhrady. Predpokladom však je, že vopred bude dohodnutý finančný strop za realizáciu a materiálové položky, ktoré budú použité.</p>
+            <p>V prípade, ak má zákazník záujem o tvorbu záhrady so striktným doržaním osadenia a druhovej skladby výsadby, či iných stavebných alebo záhradných prvkov na pozemku; pre takéhoto zákazníka je vhodné a odporúčané riešenie zakúpiť si u nás <b>Grafický návrh záhrady s podrobnou dokumentáciou.</b></p>
+            <p>Počas konzultácií sú grafické štúdie záhrad prezentované zákazníkom na počítači v 3D perspektíve a v dynamickej vizualizácii. Zákazník môže tak svoju „novú záhradu“ vidieť v reálnom priestorovom a farebnom vyobrazení. V prípade požiadaviek vieme so zákazníkom po dohode jednotlivé konzultácie a prezentácie riešiť aj „online“ a podklady zaslať formou e-mailu.</p>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

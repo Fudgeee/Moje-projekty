@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const images = document.querySelectorAll('.clickable-image');
+                const enlargedView = document.createElement('div');
+                enlargedView.classList.add('enlarged');
+                let enlarged = false;
+        
+                document.body.appendChild(enlargedView);
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        enlargedView.innerHTML = '';
+                        enlarged = !enlarged;
+        
+                        if (enlarged) {
+                            const clone = image.cloneNode(true);
+                            clone.style.height = 'auto';
+                            enlargedView.appendChild(clone);
+                            enlargedView.style.opacity = 1;
+                            enlargedView.style.pointerEvents = 'auto';
+        
+                            // Přidáme tlačítko zavírání do zvětšeného pohledu
+                            const closeButton = document.createElement('div');
+                            closeButton.classList.add('close-button');
+                            closeButton.innerHTML = '&times;';
+                            enlargedView.appendChild(closeButton);
+        
+                            // Přidáme událost kliknutí na tlačítko zavírání
+                            closeButton.addEventListener('click', () => {
+                                enlargedView.style.opacity = 0;
+                                enlargedView.style.pointerEvents = 'none';
+                                enlarged = false;
+                            });
+        
+                            // Přidáme událost kliknutí mimo zvětšený pohled
+                            enlargedView.addEventListener('click', (event) => {
+                                if (event.target === enlargedView) {
+                                    enlargedView.style.opacity = 0;
+                                    enlargedView.style.pointerEvents = 'none';
+                                    enlarged = false;
+                                }
+                            });
+                        } else {
+                            enlargedView.style.opacity = 0;
+                            enlargedView.style.pointerEvents = 'none';
+                        }
+                    });
+                });
+            });
+        </script>  
+        <main id="osvetlenie">
+            <h1>EFEKTNÁ A JEDINEČNÁ ZÁHRADA AJ V NOCI A V ZIMNOM OBDOBÍ</h1>
+            <p>Pri celkovej tvorbe exteriéru a zvlášť výsadieb drevín, ponúkame návrh, dodávku a montáž efektného záhradného led osvetlenia značky LUDECO. Jedným z najväčších trendov poslednej doby je nasvietenie solitérov a vzrastlých rastlín, prípadne častí záhonov alebo iných prvkov v záhrade bodovým led osvetlením. Osvetlenie má pri minimálnej spotrebe elektrickej energie vysoký estetický efekt pri večernom, resp. nočnom nasvietení záhrady. Celý systém osvetlenia je plne automatický, riadený spúšťacou súmrakovou jednotkou. Táto je variabilne nastaviteľná buď podľa senzora súmraku a slnečného svitu, alebo podľa digitálneho časovača s možnosťou voľby dĺžky času nasvietenia po začatí súmraku. Jednotlivé svetlá sú nastaviteľné aj do potrebného uhla svietenia za pomoci kĺbovej hlavice. Nie je problém bodové osvetlenie neskôr posunúť podľa potreby, hlavne keď sa v budúcnosti nasvietené rastliny rozrastú.</p>
+            <div class="graficka-stud">
+                <img src="img/osvetlenie/01svetlo.jpg" alt="osvetlenie" class="clickable-image">
+                <img src="img/osvetlenie/02svetlo.jpg" alt="osvetlenie" class="clickable-image">
+                <img src="img/osvetlenie/03svetlo.jpg" alt="osvetlenie" class="clickable-image">
+            </div>
+            <h2>Osvetlenie solitérnych stromov</h2>
+            <p>Vhodne rozmiestneným osvetlením dokážeme v záhrade vytvoriť jedinečné „čaro“ aj v noci. Okrasná záhrada nám odkryje svoju nepoznanú krásu a jedinečný vizuálny potenciál aj vo večerných hodinách alebo v zimnom období...</p>
+            <div class="graficka-studia1">
+                <img src="img/osvetlenie/01.jpg" alt="Osvetlenie" class="clickable-image">
+            </div>
+            <div class="graficka-studia1">
+                <img src="img/osvetlenie/02.jpg" alt="Osvetlenie" class="clickable-image">
+            </div>
+            <div class="graficka-studia1">
+                <img src="img/osvetlenie/03.jpg" alt="Osvetlenie" class="clickable-image">
+            </div>
+            <div class="graficka-studia1">
+                <a href="vecerne-osvetlenie.html"><img src="img/osvetlenie/vecerne/20210506_212659.jpg" alt="osvetlenie"></a>
+                <p>
+                    <a href="vecerne-osvetlenie.html">Nasvietenie výsadby vo večerných hodinách</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="nocne-osvetlenie.html"><img src="img/osvetlenie/nocne/DSCN7439.jpg" alt="osvetlenie"></a>
+                <p>
+                    <a href="nocne-osvetlenie.html">Nasvietenie záhrady v noci</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="zimne-osvetlenie.html"><img src="img/osvetlenie/zimne/IMG_2422.jpg" alt="osvetlenie"></a>
+                <p>
+                    <a href="zimne-osvetlenie.html">Nasvietenie zasneženej záhrady v zimnom období</a>
+                </p>
+            </div>
+            <h2>Osvetlenie jazierok a vodných prvkov</h2>
+            <p>Ďalším trendom v osvetlení exteriéru je originálne nasvietenie vodných prvkov v záhrade, ako sú jazierka, potoky, fontány a ich priľahlé miesta. Naša ponuka zahŕňa tiež dodávku a montáž vysokokvalitných značkových svietidiel značky OASE s najvyším stupňom ochrany do exteriéru. Svetlá sú navrhnuté a vhodné pre použitie i pod vodnou hladinou, pre získanie maximálneho svetelného efektu.</p>
+            <div class="graficka-stud">
+                <img src="img/osvetlenie/jazierka/01.jpg" alt="osvetlenie" class="clickable-image">
+                <img src="img/osvetlenie/jazierka/02.jpg" alt="osvetlenie" class="clickable-image">
+                <img src="img/osvetlenie/jazierka/03.jpg" alt="osvetlenie" class="clickable-image">
+                <img src="img/osvetlenie/jazierka/04.jpg" alt="osvetlenie" class="clickable-image">
+                <img src="img/osvetlenie/jazierka/05.jpg" alt="osvetlenie" class="clickable-image">
+                <img src="img/osvetlenie/jazierka/06.jpg" alt="osvetlenie" class="clickable-image">
+            </div>
+            <h2>Klasické záhradné osvetlenie</h2>
+            <p>Už počas návrhu záhrady je vhodné sa zamyslieť nad vhodným celkovým osvetlením exteriéru, ktoré by malo z praktického hľadiska dostatočne osvetliť hlavne priľahlé komunikácie. Z estetického hľadiska by sa však mali použiť svietidlá, ktoré zapadnú do celkovej kompozície a charakteru záhrady, aby sa nestali rušivým prvkom v záhrade.</p>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

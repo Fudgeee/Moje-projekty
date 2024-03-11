@@ -1,0 +1,1376 @@
+body{
+    font-family: "Bahnschrift";
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #3def48, white);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+/* CAROUSEL */
+.section{
+    margin: 0;
+    padding: 0;
+    padding-top: 4rem;
+    display: flex;
+    max-width: max-content;
+}
+.slider{
+    margin: 0 auto;
+    width: 375px;
+    overflow: hidden;
+    height: 237.5px;
+}
+.slide{
+    width: 750%;
+    height: 237.5px;
+    display: flex;
+}
+.slide input{
+    display: none;
+}
+.st.first {
+    width: 20%;
+    transition: 2s;
+}
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 375px;
+    height: 237.5px;
+}
+.nav-m{
+    position: absolute;
+    width: 375px;
+    margin-top: -17px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid red;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    width: 10px;
+    height: 10px;
+}
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: red;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+.nav-auto{
+    position: absolute;
+    width: 375px;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid red;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 1s;
+    width: 10px;
+    height: 10px;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: red;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: red;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: red;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color: red;
+}
+
+nav{
+    position: fixed;
+    z-index: 100;
+    background-color: green;
+    width: 100%;
+}
+nav img{
+    width: 34px;
+    float: left;
+    padding: 13.2px;
+    padding-right: 5px;
+}
+#zahlavie{
+    width: 100%;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+ul li{
+    display: inline-block;
+    cursor: pointer;    
+}
+a{
+    text-decoration: none;
+    width: 100%;
+}
+.a-hover:hover{
+    text-decoration: underline;
+    color: red;
+}
+ul li a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    vertical-align: middle;
+}
+ul li a:hover,
+ul li a:focus{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+ul li:first-child a:hover,
+ul li:first-child a:focus{
+    color: red;
+    text-decoration: none;
+}
+ul li:first-child a{
+    font-size: 28px;
+}
+#navg.navv.responsive {
+    position: relative;
+	overflow: auto;
+}
+#navg.navv.responsive li.nav2{ /* trieda responsive otvori hamburger menu*/
+    clear: both;
+    display: block;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(0, 220, 70);
+    border-top: 0.5px solid #e3e3e3;
+}
+#zahlavie li.nav2{
+    display: none;
+}
+nav #lastli{
+    display: unset;
+    width: 35px !important;
+    float: right;
+    padding: 0px 20px;
+    
+}
+#lastli img{
+    width: 24px;
+    padding-right: 45px;
+    padding-top: 7px !important;
+}
+#obr{
+    position: relative;
+    padding-top: 4rem;
+    width: 100%;
+}
+#obr img{
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-top: 50px;
+}
+#uvod,
+#galery{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+#uvod h1,
+#kontakt h1,
+#tim h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 33px;
+    color: black;
+}
+#uvod-jedna,
+#uvod-dva,
+#uvod-tri{
+    float: left;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#uvod-jedna img,
+#uvod-dva img,
+#uvod-tri img{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+#uvod h2{
+    text-align: center;
+    font-size: 25px; 
+}
+#uvod p{
+    text-align: left;
+}
+#galery h1{
+    padding-top: 15px;
+    font-size: 26px;
+    text-align: center;
+}
+#galery{
+    clear: both;
+    padding-bottom: 0;
+}
+#gal-jedna,
+#gal-dva,
+#gal-tri{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#gal-jedna img,
+#gal-dva img,
+#gal-tri img{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    display: block;
+}
+hr{
+    clear: both;
+    border-top: 2px solid black;
+    width: 95%;
+    margin: 0 auto;
+}
+#gal-jedna p,
+#gal-dva p,
+#gal-tri p{
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 0px 45px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+#gal-jedna a,
+#gal-dva a,
+#gal-tri a{
+    color: blue;
+    font-weight: 600;
+    text-decoration: none;
+    text-underline-offset: 3px;
+    line-height: 28px;
+}
+#kontakt{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 520px;
+}
+#kontakt img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    float: left;
+    padding-right: 10px;
+}
+#kontakt-info,
+#kontakt-cas,
+#kontakt-jedna,
+#kontakt-dva{
+    box-sizing: border-box;
+    padding: 30px 0px 0px;
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 10px !important;
+}
+#kontakt-info p,
+#kontakt-cas p{
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+#kontakt i{
+    font-size: 35px;
+    float: left;
+    padding: 10px;
+}
+#kontakt a{
+    font-size: 20px;
+    color: mediumblue;
+    padding-left: 5px;
+}
+#tim{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+#osoba1,
+#osoba2{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 25px;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+#tim h1{
+    margin-bottom: 0;}
+#h1-tim{
+    width: 75%;
+    margin: 0 auto;
+    clear: both;
+    padding-bottom: 30px;
+    font-size: 23px !important;
+}
+#osoba1 img,
+#osoba2 img{
+    padding: 0px 20px;
+	border-radius: 50%;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+#osoba1 h2,
+#osoba2 h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+#osoba1 h3,
+#osoba2 h3{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+#osoba1 ul,
+#osoba2 ul,
+#osoba-ul{
+    list-style-type: disc; 
+    padding-bottom: 30px;
+    list-style-position: outside;
+}
+#osoba-ul{
+    width: 80%;
+    float: left;
+    margin-left: 50px;
+}
+#osoba1 ul li,
+#osoba2 ul li,
+#osoba-ul li{
+    display: list-item;
+}
+#osoba-ul li{
+    padding-right: 0;
+}
+#osoba-center{
+    width: 90%;
+    margin: 0 auto;
+}
+#jump-ponuka,
+#jump-kontakt,
+#jump-tim{
+    display: block;
+    height: 30px;
+    clear: both;
+}
+#ponuka{
+    clear: both;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    background-image: url('../img/1005zahrada.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ponuka-menu{
+    width: 396px;
+    margin: 0 auto;
+    padding: 60px 0px;
+    overflow: hidden;
+}
+.ponuka-list{
+    background-color: white;
+    opacity: 0.6;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2px;
+    float: left;
+    height: 120px;
+    padding: 0px 20px;
+}
+.ponuka-list h2{
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 36px;
+    margin-top: 16.8px;
+    margin-bottom: 16.8px;
+}
+.ponuka-kratka h2{
+    margin-top: 38.4px;
+    margin-bottom: 38.4px;
+}
+.ponuka-list:hover{
+    opacity: 0.9;
+}
+#info-btn{
+    padding: 13px 0px;
+    font-size: 16px;
+    letter-spacing: .15em;
+    background-color: green;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    border: 2px solid black;
+}
+#info-btn a{
+    width: 150px;
+    padding: 13px 20px;
+    color: white;
+}
+#rodinne,
+#predzahradky,
+#firmy,
+#graficke-navrhy,
+#zavlaha,
+#osvetlenie,
+#travnik,
+#vysadba,
+#jazierka,
+#umele-travniky,
+#stavebne-prace,
+#cennik,
+#firmy-h1{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+#firmy-h1{
+    padding-top: 0;
+}
+#rodinne h1,
+#predzahradky h1,
+#firmy h1{
+    text-align: center;
+    font-size: 32px;
+}
+#rodinne p,
+#predzahradky p{
+    text-align: center;
+    margin-top: 8px;
+}
+#firmy p{
+    text-align: left;
+    margin-top: 8px;
+}
+#firmy a{
+    font-size: 18px;
+}
+.rodinne-domy,
+.predzahradky-trieda,
+.firmy-trieda{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    padding-bottom: 0;
+    float: left;
+    overflow: hidden;
+}
+.rodinne-domy img,
+.predzahradky-trieda img{
+    width: 100%;
+}
+.back-btn{
+    float: right;
+    padding: 12px;
+}
+#map{
+    height: 500px;
+    margin-top: 130px;
+    border-top: 2px solid black;
+}
+footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: auto;
+}
+#footer-note{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+.rodinna-zahrada,
+.predzahradky-zahradka,
+.firmy-firma,
+.graficka-stud,
+.graficka-studx{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    padding-top: 75px;
+}
+.graficka-studia,
+.graficka-studia1-dva{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+.graficka-studia1{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+.rodinna-zahrada img,
+.predzahradky-zahradka img,
+.firmy-firma img,
+.graficka-stud img,
+.graficka-studx img{
+    width: 100%;
+    padding-top: 15px;
+}
+.graficka-studia img,
+.graficka-studia1-dva img{
+    width: 100%;
+    padding-top: 15px;
+}
+.graficka-studia1 img{
+    width: 100%;
+    padding-top: 15px;
+}
+.rodinna-zahrada hr,
+.predzahradky-zahradka hr,
+.firmy-firma hr{
+    margin: 50px auto;
+}
+#firmy-h1 h1{
+    padding-top: 120px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+#firmy-h1-last{
+    padding-top: 0 !important;
+}
+.firmy-firma img.img16-9,
+.predzahradky-zahradka img.img16-9{
+    height: 237.2px;
+}
+.firmy-trieda a:visited,
+#predzahradky a:visited,
+.rodinne-domy a:visited,
+#graficke-navrhy a:visited,
+#zavlaha a:visited,
+#osvetlenie a:visited,
+#travnik a:visited,
+#vysadba a:visited,
+#jazierka a:visited,
+#umele-travniky a:visited,
+#stavebne-prace a:visited,
+#firmy-h1 a:visited{
+    color: blue;
+}
+#graficke-navrhy,
+#zavlaha,
+#osvetlenie,
+#travnik,
+#vysadba,
+#jazierka,
+#umele-travniky,
+#stavebne-prace,
+#cennik,
+#firmy-h1{
+    width: 90%;
+    margin: 0 auto;
+}
+#graficke-navrhy h1,
+#zavlaha h1,
+#osvetlenie h1,
+#travnik h1,
+#vysadba h1,
+#jazierka h1,
+#umele-travniky h1,
+#stavebne-prace h1,
+#cennik h1{
+    padding-top: 30px;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+#graficke-navrhy h2.druha,
+#zavlaha h2.druha,
+#osvetlenie h2,
+#vysadba h2,
+#jazierka h2{
+    padding-top: 30px;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+#umele-travniky h3{
+    font-size: 24px;
+    text-align: left;
+    padding-top: 15px;
+}
+.graficka-studia p,
+.graficka-studia1-dva p{
+    text-align: center;
+    margin-top: 8px;
+}
+.graficka-studia1 p{
+    text-align: center;
+    margin-top: 8px;
+}
+#medzera{
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+#pcenter{
+    text-align: center;
+}
+.dlhyobrazok{
+    height: 600px !important;
+}
+.h240{
+    height: 240px !important;
+}
+.dlhyobrazok1{
+    height: 450px !important;
+}
+.delete-float{
+    clear: both;
+}
+#lasth2{
+    float: left;
+    width: 90%;
+    font-size: 22px;
+
+}
+.bsize{
+    font-size: 24px;
+}
+#kontakt-icons{
+    clear: both;
+    width: fit-content;
+    border-radius: 50%;
+    background-color: white;
+    margin: 55px;
+    float: none !important;
+    padding: 0 !important;
+    margin-top: 25px;
+}
+#kontakt-icons a{
+    padding: 0;
+}
+.fa-facebook{
+    border-radius: 25%;
+    background: #3B5998;
+    color: white;
+    margin-right: 20px;
+}
+#yt{
+    padding-top: 2.5px;
+    height: 50px !important;   
+    width: 65px !important;
+    border-radius: 25%;
+    color: red !important;
+    font-style: normal;
+}
+
+
+
+.clickable-image {
+    
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+.enlarged {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.enlarged img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: rgb(255, 86, 86);
+    font-size: 50px;
+}
+.close-button:hover{
+    color: red;
+}
+
+@media only screen and (min-width: 576px){
+    .section{
+        padding-top: 4.5rem;
+        
+    }
+    .slider{
+        width: 576px;
+        margin: 0 auto;
+        height: 364.8px;
+    }
+    .slide{
+        width: 500%;
+        height: 364.8px;
+    }
+    .st img{
+        width: 576px;
+        height: 364.8px;
+    }
+    .nav-m{
+        width: 576px;
+        margin-top: -27px;
+    }
+    .nav-auto{
+        width: 576px;
+        margin-top: 337.92px;
+    }
+    #obr h1{
+        width: 60%;
+        font-size: 28px;
+        line-height: 30px;
+		top: 17%;
+        left: 25%;
+    }
+	ul li:first-child a{
+    	font-size: 2.5rem;
+	}
+	nav #lastli{
+    	display: unset;
+    	font-size: 24px;
+        width: 35px;
+    	float: right;
+    	padding: 13.425px 28.89px;
+        padding-top: 0;
+	}
+    #lastli img{
+        width: 32px;
+        padding-right: 45px;
+        padding-top: 5px !important;
+        padding-bottom: 0px;
+    }
+	#lasth2{
+        float: left;
+        width: 420px;
+        font-size: 1.5rem;
+    }
+    #kontakt-info,
+    #kontakt-cas,
+    #kontakt-jedna,
+    #kontakt-dva{
+        box-sizing: border-box;
+        padding: 50px;
+        width: 500px;
+        padding-bottom: 0px;
+        margin: 0 auto;
+    }
+	nav img{
+        width: 40px;
+    }
+    #map{
+        margin-top: 150px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .slider{
+        width: 768px;
+        margin: 0 auto;
+        height: 486.4px;
+    }
+    .slide{
+        width: 500%;
+        height: 486.4px;
+    }
+    .st img{
+        width: 768px;
+        height: 486.4px;
+    }
+    .nav-m{
+        width: 768px;
+        margin-top: -27px;
+    }
+    .nav-auto{
+        width: 768px;
+        margin-top: 458.56px;
+    }
+    #obr h1{
+        width: 52%;
+        font-size: 32px;
+        line-height: 35px;
+        top: 12%;
+    }
+    #uvod-jedna,
+    #uvod-dva,
+    #uvod-tri{
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 30px;
+        float: none;
+    }
+    #gal-jedna,
+    #gal-dva,
+    #gal-tri{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #kontakt{
+        width: 100%;
+        margin: 0 auto;
+        height: 310px;
+    }
+    #kontakt-info,
+    #kontakt-cas,
+    #kontakt-jedna,
+    #kontakt-dva{
+        width: 50%;
+        height: 101px;
+        float: left;
+    }
+    #kontakt-cas img{
+        padding-bottom: 20px;
+    }
+    #rodinne,
+    #predzahradky,
+    #graficke-navrhy,
+    #zavlaha,
+    #osvetlenie,
+    #travnik,
+    #vysadba,
+    #jazierka,
+    #umele-travniky,
+    #stavebne-prace,
+    #cennik,
+    #firmy-h1{
+        width: 65%;
+    }
+    .rodinna-zahrada,
+    .predzahradky-zahradka,
+    .graficka-stud,
+    .graficka-studx{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #firmy{
+    width: 90%;
+    }
+    .firmy-firma{
+        width: 100%;
+    }
+	#osoba-center{
+        width: 457px;
+        margin: 0 auto;
+    }
+    #map{
+        margin-top: 100px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .slider{
+        width: 992px;
+        margin: 0 auto;
+        height: 628.27px;
+    }
+    .slide{
+        width: 500%;
+        height: 628.27px;
+    }
+    .st img{
+        width: 992px;
+        height: 628.27px;
+    }
+    .nav-m{
+        width: 992px;
+        margin-top: -26px;
+    }
+    .nav-auto{
+        width: 992px;
+        margin-top: 602.31px;
+    }
+    #zahlavie{
+        width: 992px;
+        margin: 0 auto;
+    }
+    #zahlavie li.nav2{
+        display: inline;
+    }
+    nav #lastli{
+        display: none;
+    }
+    ul li:first-child{
+        padding-right: 5%;
+    }
+    ul li:not(:first-child){
+        padding-right: 15px;
+    }
+    #obr h1{
+        width: 62%;
+        font-size: 40px;
+        top: 10%;
+        line-height: 50px;
+        left: 22%;
+    }
+    #obr img{
+        padding-top: 25px;
+    }
+    #uvod{
+        padding-bottom: 0;
+    }
+    #uvod-jedna,
+    #uvod-dva,
+    #uvod-tri{
+        width: 50%;
+        height: 600px;
+        float: left;
+        box-sizing: border-box;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+    }
+    #galery{
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    #galery p{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #gal-jedna,
+    #gal-dva,
+    #gal-tri{
+        height: 470px;
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        padding-bottom: 20px;
+    }
+    #uvod-tri,
+    #gal-tri{
+        display: block;
+        overflow: hidden;
+        float: none;
+        margin: 0 auto;
+    }
+    #kontakt{
+        width: 80%;
+        margin: 0 auto;
+        height: 250px;
+    }
+    #tim{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0px;
+    }
+    #osoba1,
+    #osoba2{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 50px;
+        padding-bottom: 0;
+        margin: 0 auto;
+        float: left;
+    }
+    #osoba1 ul,
+    #osoba2 ul,
+    #osoba-ul{
+        margin-left: 50px;
+    }
+    #h1-tim{
+        padding-top: 30px;
+        font-size: 30px !important;
+    }
+    #ponuka-menu{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .ponuka-list{
+        width: 396px;
+    }
+    #ponuka-list-last{
+        margin: 2px 202px;
+    }
+    #footer-note{
+        width: 992px;
+        margin: 0 auto;
+    }
+    .rodinna-zahrada,
+    .predzahradky-zahradka,
+    .firmy-firma,
+    .graficka-studx{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .rodinna-zahrada img,
+    .predzahradky-zahradka img,
+    .firmy-firma img,
+    .graficka-stud img,
+    .graficka-studx img{
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        float: left;
+    }
+    #graficke-navrhy h2.druha,
+    #zavlaha h2.druha{
+        margin: 0 auto;
+        width: 80%;
+    }
+    #map{
+        margin-top: 130px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .section{
+        padding-top: 6.5rem;
+    }
+    .slider{
+        width: 1200px;
+        margin: 0 auto;
+        height: 760px;
+    }
+    .slide{
+        width: 500%;
+        height: 760px;
+    }
+    .st img{
+        width: 1200px;
+        height: 760px;
+    }
+    .nav-m{
+        width: 1200px;
+        margin-top: -40px;
+    }
+    .nav-auto{
+        width: 1200px;
+        margin-top: 720px;
+    }
+    nav img{
+        width: 60px;
+    }
+    #zahlavie,
+    #tim,
+    #footer-note{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    ul{
+        padding: 1rem 0;
+    }
+    ul li a{
+        font-size: 1.32rem;
+    }
+    ul li:first-child a{
+        font-size: 3.2rem;
+    }
+    ul li:first-child{
+        padding-right: 69px;
+    }
+    ul li:not(:first-child){
+        padding-right: 25px;
+    }
+    #obr h1{
+        width: 50%;
+        top: 10%;
+        left: 25%;
+        font-size: 60px;
+        line-height: 65px;
+    }
+    #uvod{
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 70px;
+        padding-top: 40px;
+    }
+    #uvod h1{
+        font-size: 40px;
+    }
+    #uvod-jedna,
+    #uvod-dva,
+    #uvod-tri{
+        width: 400px;
+        height: 100%;
+        padding-top: 50px;
+    }
+    #galery{
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 0px;
+        padding-top: 80px;
+    }
+    #galery h1{
+        padding-bottom: 45px;
+        font-size: 36px;
+    }
+    #galery p{
+        padding-bottom: 5px;
+    }
+    #gal-jedna,
+    #gal-dva,
+    #gal-tri{
+        width: 400px;
+        float: left;
+        height: 370px;
+    }
+    #gal-jedna img,
+    #gal-dva img,
+    #gal-tri img,
+    .rodinne-domy,
+    .predzahradky-trieda{
+        width: 400px;
+    }
+    #gal-jedna p,
+    #gal-dva p,
+    #gal-tri p{
+        padding-bottom: 50px;
+    }
+    #kontakt{
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 50px;
+        height: 300px;
+    }
+    #kontakt h1{
+        font-size: 40px;
+    }
+    #kontakt img{
+        padding-right: 15px;
+    }
+    #kontakt-info,
+    #kontakt-cas,
+    #kontakt-jedna,
+    #kontakt-dva{
+        float: left;
+        width: 500px;
+    }
+    #osoba1,
+    #osoba2{
+        width: 600px;
+        float: left;
+    }
+    #tim h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    #h1-tim{
+        width: 1200px;
+        margin: 0 auto;
+        font-size: 32px !important;
+    }
+    #jump-ponuka{
+        height: 10px;
+        padding-top: 80px;
+    }
+    #jump-tim{
+        height: 100px;
+    }
+    #jump-kontakt{
+        height: 50px;
+    }
+    #ponuka-menu{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 120px 0px;
+    }
+    .ponuka-list{
+        width: 396px;
+    }
+    #rodinne,
+    #predzahradky,
+    #firmy,
+    #graficke-navrhy,
+    #zavlaha,
+    #osvetlenie,
+    #travnik,
+    #vysadba,
+    #jazierka,
+    #umele-travniky,
+    #stavebne-prace,
+    #cennik,
+    #firmy-h1{
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    #firmy-h1{
+        padding-top: 0;
+    }
+    #rodinne h1,
+    #predzahradky h1,
+    #firmy h1{
+        padding-bottom: 20px;
+    }
+    #ponuka-list-last{
+        margin: 2px;
+        float: left;
+    }
+    .back-btn{
+        padding: 16px;
+    }
+    .rodinna-zahrada,
+    .predzahradky-zahradka,
+    .firmy-firma,
+    .graficka-stud,
+    .graficka-studx{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .graficka-studia{
+        width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        float: left;
+        height: 252px;
+    }
+    .graficka-studia1-dva{
+        width: 600px;
+        box-sizing: border-box;
+        float: left;
+    }
+    .graficka-studia1-dva p{
+        width: 400px;
+        padding: 0px 100px;
+    }
+    .graficka-studia1{
+        width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        float: left;
+        overflow: hidden;
+    }
+    .rodinna-zahrada img,
+    .predzahradky-zahradka img,
+    .firmy-firma img,
+    .graficka-stud img,
+    .graficka-studx img{
+        width: 400px;
+        padding: 15px;
+    }
+    .graficka-stud img{
+        height: 300px;
+    }
+    .graficka-studx img{
+        height: 205px;
+    }
+    .graficka-studia img{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    .graficka-studia1-dva img{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 100px;
+    }
+    .graficka-studia1 img{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    #graficke-navrhy h2.druha,
+    #zavlaha h2.druha{
+        margin: 0 auto;
+        width: 90%;
+    }
+    #zavlaha h2.druha{
+        margin-bottom: 30px;
+    }
+    .graficka-studia1 img:last-child{
+        height: 307.5px;
+    }
+    .graficka-stud,
+    .graficka-studx{
+        padding-top: 0 !important;
+    }
+    #medzera{
+        height: 100px;
+    }
+    .medzera1{
+        height: 30px;
+        overflow: hidden;
+        clear: both;
+    }
+	.medzera2{
+        height: 0px;
+        overflow: hidden;
+        clear: both;
+    }
+	#osoba-center{
+        width: 910px;
+        margin: 0 auto;
+    }
+    #osoba-ul{
+        margin-top: 5px;
+        width: 400px;
+    }
+}

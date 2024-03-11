@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main id="umele-travniky">
+            <h1>UMELÉ DEKORAČNÉ TRÁVNIKY, ŠPORTOVÉ POVRCHY A IHRISKÁ</h1>
+            <p>V priebehu posledných rokov sa aj u nás dostávajú do popredia realizácie plôch s „umelou trávou“. Mnohí zákazníci s obľubou často využívajú aj takúto možnosť riešenia svojho exteriéru. Umelé dekoračné trávniky nájdu svoje uplatnenie hlavne v okolí bazénov a detských ihrísk, pre výbehy psov, ťažko dostupné a svahovité miesta, jednoducho všade tam, kde je problematické pestovať a udržať pekný živý trávnik.
+            Taktiež aj nestabilné počasie, pravidelné vysoké horúčavy a dlhé obdobia sucha počas vegetácie v priebehu posledných rokov, nútia čoraz viac zákazníkov zamýšľať sa aj nad takýmto riešením svojho okolia.</p>
+            <h3>Medzi najväčšie výhody umelých trávnatých plôch patrí najmä:</h3>
+            <p>- bezúdržbovosť <br>
+                – žiadne kosenie, hnojenie, polievanie <br>
+                - reálna podoba so živým trávnikom <br>
+                – možnosť výberu z množstva typov a prevedení <br>
+                - príjemný na chôdzu a dotyk <br>
+                - možnosť pravidelnej záťaže <br>
+                - celoročné využitie <br>
+                - celoročne pekný vzhľad <br>
+                - UV stabilita</p>
+            <h3>Nevýhody:</h3>
+            <p>Hlavnou nevýhodou sú vyššie počiatočné náklady umelého trávnika v porovnaní so živým trávnikom; ...tieto náklady sa však vďaka nízkym prevádzkovým nákladom veľmi rýchlo zákazníkovi vrátia späť!</p>
+            <div class="graficka-studia1">
+                <a href="ihrisko1.html"><img src="img/ihriska/ihrisko1/titulka/0107ihr.jpg" alt="foto"></a>
+                <p>
+                    <a href="ihrisko1.html">01 ihrisko s umelou trávou</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="ihrisko2.html"><img src="img/ihriska/ihrisko2/titulka/IMG_1407.jpg" alt="foto"></a>
+                <p>
+                    <a href="ihrisko2.html">02 ihrisko s umelou trávou</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="ihrisko3.html"><img src="img/ihriska/ihrisko3/titulka/IMG_20211020_141456.jpg" alt="foto"></a>
+                <p>
+                    <a href="ihrisko3.html">03 ihrisko s umelou trávou</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="ihrisko4.html"><img src="img/ihriska/ihrisko4/titulka/IMG_20200921_090824_11.jpg" alt="foto"></a>
+                <p>
+                    <a href="ihrisko4.html">04 ihrisko s umelou trávou</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="ihrisko5.html"><img src="img/ihriska/ihrisko5/titulka/IMG_20200604_145744_1.jpg" alt="foto"></a>
+                <p>
+                    <a href="ihrisko5.html">05 ihrisko s umelou trávou</a>
+                </p>
+            </div>
+            <div class="graficka-studia1">
+                <a href="ihrisko6.html"><img src="img/ihriska/ihrisko6/titulka/ski01.jpg" alt="foto"></a>
+                <p>
+                    <a href="ihrisko6.html">06 ihrisko s umelou trávou</a>
+                </p>
+            </div>
+            <div class="delete-float"></div>
+            <h3>Ďalšie možnosti riešenia ihrísk a iných záhradných netradičných plôch</h3>
+            <div class="medzera1"></div>
+            <div class="graficka-studia1-dva">
+                <a href="prezentacne-plochy.html"><img src="img/ihriska/prezentacne-plochy/IMG_20190604_135451.jpg" alt="foto"></a>
+                <p>
+                    <a href="prezentacne-plochy.html">Prezentačné a iné manipulačné plochy s umelým trávnatým povrchom</a>
+                </p>
+            </div>
+            <div class="graficka-studia1-dva">
+                <a href="strkove-ihriska.html"><img src="img/ihriska/strkove-ihriska/02ihrisko.jpg" alt="foto"></a>
+                <p>
+                    <a href="strkove-ihriska.html">Ihriská so štrkovým, štiepkovým alebo trávnikovým podkladom</a>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

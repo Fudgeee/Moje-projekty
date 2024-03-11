@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav id="navg" class="navv">
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="nav2">
+                        <a href="#uvod" onclick="myFunction2()">Úvod</a>
+                    </li>
+                    <li class="nav2">
+                        <a href="#galery" onclick="myFunction2()">Naše realizácie</a>
+                    </li>
+                    <li class="nav2">
+                        <a href="#jump-ponuka" onclick="myFunction2()">O firme</a>
+                    </li>
+                    <li class="nav2">
+                        <a href="#jump-tim" onclick="myFunction2()">Náš tím</a>
+                    </li>
+                    <li class="nav2">
+                        <a href="#jump-kontakt" onclick="myFunction2()">Kontakt</a>
+                    </li>
+                    <li id="lastli">
+                        <a href="index.html#" class="icon" onclick="myFunction()"><img src="img/bars-solid.svg" alt="menu"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            
+                <section class="section" style="width: 1200px;margin: 0 auto;">
+                    <div class="slider">
+                        <div class="slide">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <div class="st first">
+                                <img src="img/01.jpg" alt="">
+                            </div>
+                            <div class="st">
+                                <img src="img/02.jpg" alt="">
+                            </div>
+                            <div class="st">
+                                <img src="img/03.jpg" alt="">
+                            </div>
+                            <div class="st">
+                                <img src="img/04.jpg" alt="">
+                            </div>
+                            <div class="nav-auto">
+                                <div class="a-b1"></div>
+                                <div class="a-b2"></div>
+                                <div class="a-b3"></div>
+                                <div class="a-b4"></div>
+                            </div>
+                        </div>
+                        <div class="nav-m">
+                            <label for="radio1" class="m-btn"></label>
+                            <label for="radio2" class="m-btn"></label>
+                            <label for="radio3" class="m-btn"></label>
+                            <label for="radio4" class="m-btn"></label>
+                        </div>
+                    </div>
+                </section>
+                <script type="text/javascript">
+                    document.addEventListener("DOMContentLoaded", function () {
+                    var counter=1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked=true;
+                        counter++;
+                        if(counter > 4){
+                            counter = 1;
+                        }
+                    },4000);
+                });
+                </script>
+            <div id="uvod">
+                <h1>Všetko pre Vašu záhradu od návrhu po realizáciu...</h1>
+                <div id="uvod-jedna">
+                    <img src="img/house.svg" alt="House">
+                    <h2>VIAC AKO 200 REALIZÁCIÍ</h2>
+                    <p>Firma Proeko Záhrady s.r.o. je rodinná firma, ktorá za svoje dlhoročné pôsobenie zrealizovala množstvo väčších či menších projektov v oblasti úpravy exteriéru a sadovníckych prác. Ponúkame služby v oblasti kompletných realizácií okrasných záhrad, úprav prezentačných plôch firemných pozemkov a výsadby verejnej zelene. Cielovou skupinou sú pre nás hlavne menšie a stredne veľké záhrady rodinných domov či firemných objektov o rozlohe približne do 300 m2 „riešenej zelenej“ plochy. Regionálnymi oblasťami nášho pôsobenia sú najmä mestá: Nitra, Hlohovec, Piešťany, Topoľčany, Zlaté Moravce a ich blízke okolie.</p>
+                </div>
+                <div id="uvod-dva">
+                    <img src="img/medail.svg" alt="Medail">
+                    <h2>PROFESIONÁLNY PRÍSTUP</h2>
+                    <p>Naším cieľom je, aby každý náš zákazník bol čo najviac spokojný. Snažíme sa to dosiahnuť osobitným prístupom k zákazníkovi a kvalitne odvedenou prácou pri každej realizácii. Dávame dôraz na korektný a férový prístup k zákazníkom. Prácu ktorú sľúbime sa aj snažíme dokončiť v stanovených termínoch a v sume na ktorej sa vopred dohodneme. Pri komunikácii so zákazníkom sa veci snažíme pomenovať jasne - tak aké sú, ponúkame reálne riešenia, nezavádzame klienta a prípadné vzniknuté problémy riešime s rozvahou. V neposlednom rade berieme veľký ohľad na pôvodnú okolitnú prírodu a snažíme sa chovať počas realizácií čo najviac ekologicky.</p>
+                </div>
+                <div id="uvod-tri">
+                    <img src="img/timer.svg" alt="Time">
+                    <h2>22 ROKOV SKÚSENOSTÍ</h2>
+                    <p>Veríme, že sme za celé doterajšie pôsobenie priniesli svojou poctivou prácou majiteľom nových záhrad skrášlenie a spríjemnenie ich prostredia. Našou reklamou nie sú inzeráty v novinách ani nereálne zľavové akcie, ale reklamou sú nám hlavne naši spokojní zákazníci. Zámerom firmy je ponúkať i naďalej každému svojmu zákazníkovi čo najefektívnejšie riešenia pre ich záhradu a exteriér. Individuálnym prístupom každému z našich projektov sa snažíme, aby konečný výsledok bol maximálne odborný, kvalitný, jedinečný, dlhodobo udržateľný, ale i praktický.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="galery">
+                <h1>Pozývame Vás k nahliadnutiu do galérie niektorých našich realizácií</h1>
+                <p>Fotodokumentácia v jednotlivých projektoch je vždy zoradená a rozdelená v jednoduchej postupnosti: pozemok alebo záhrada pred začatím prác; priebeh realizácie; záhrada po ukončení a odovzdaní prác; prípadne vzhľad záhrady po niekoľkých rokoch...</p>
+                <br>
+                <div id="gal-jedna">
+                    <a href="firmy.html"><img src="img/firmy - titulka.jpg" alt="Photo1"></a>
+                    <p>
+                        <a href="firmy.html">Firmy a organizácie - referencie</a>
+                    </p>
+                </div>
+                <div id="gal-dva">
+                    <a href="rodinne.html"><img src="img/rd - titulka.jpg" alt="Photo2"></a>
+                    <p>
+                        <a href="rodinne.html">Kompletné realizácie záhrad rodinných domov</a>
+                    </p>
+                </div>
+                <div id="gal-tri">
+                    <a href="predzahradky.html"><img src="img/mp - titulka.jpg" alt="Photo3"></a>
+                    <p>
+                        <a href="predzahradky.html">Menšie záhradné úpravy a predzáhradky</a>
+                    </p>
+                </div>
+            </div>
+            <div id="jump-ponuka"></div>
+            <div id="ponuka">
+                <div id="ponuka-menu">
+                    <a href="graficke-navrhy.html">
+                        <div class="ponuka-list">
+                            <h2>3D grafické štúdie záhrad</h2>
+                        </div>
+                    </a>
+                    <a href="zavlaha.html">
+                        <div class="ponuka-list">
+                            <h2>Závlahové automatické systémy</h2>
+                        </div>
+                    </a>
+                    <a href="zahradne-led-osvetlenie.html">
+                        <div class="ponuka-list">
+                            <h2>Záhradné LED osvetlenie</h2>
+                        </div>
+                    </a>
+                    <a href="travnikovy-program.html">
+                        <div class="ponuka-list ponuka-kratka">
+                            <h2>Trávnikový program</h2>
+                        </div>
+                    </a>
+                    <a href="vysadba.html">
+                        <div class="ponuka-list">
+                            <h2>Okrasné výsadby a záhony</h2>
+                        </div>
+                    </a>
+                    <a href="vodny-program.html">
+                        <div class="ponuka-list">
+                            <h2>Jazierka a vodné prvky</h2>
+                        </div>
+                    </a>
+                    <a href="umele-travniky-a-sportove-povrchy.html">
+                        <div class="ponuka-list">
+                            <h2>Umelé trávniky a ihriská</h2>
+                        </div>
+                    </a>
+                    <a href="drobne-stavebne-prace.html">
+                        <div class="ponuka-list">
+                            <h2>Stavebné práce a strojový park</h2>
+                        </div>
+                    </a>
+                    <a href="cennik.html">
+                        <div id="ponuka-list-last" class="ponuka-list">
+                            <h2>Portfólio služieb a cenník</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="jump-tim"></div>
+            <div id="tim">
+                <h1>Sme tu pre vás už od roku 2003</h1> 
+                <div id="osoba1">
+                    <img src="img/juraj_brezniak.jpg" alt="Osoba1">
+                    <h2>Mgr. Juraj Brezniak</h2>
+                    <h3>konateľ</h3>
+                    <ul>
+                        <li>kontakt so zákazníkom a objednávky</li>
+                        <li>konzultácie a poradenstvo, ohliadky</li>
+                        <li>cenové rozpočty a ponuky</li>
+                        <li>návrhy, realizácie a údržby zelene</li>
+                    </ul>
+                </div>
+                <div id="osoba2">
+                    <img src="img/jan_brezniak1.jpg" alt="Osoba2">
+                    <h2>Ján Brezniak</h2>
+                    <h3>konateľ</h3>
+                    <ul>
+                        <li>ekonómia, personalistika, faktúry</li>
+                        <li>technická podpora mechanizácie</li>
+                        <li>inštalácie závlahových systémov a technológií</li>
+                        <li>dozorovanie prác a realizácií</li>
+                    </ul>
+                </div>
+                <div class="delete-float"></div>
+                <div id="osoba-center">
+                <h2 id="lasth2">Realizácie záhrad a údržby zelene</h2>
+                    <ul id="osoba-ul">
+                        <li>naši zaškolení dlhoroční pracovníci s praxou</li>
+                    </ul>
+                </div>
+                <img src="img/05.jpg" alt="Zamestnanci" style="width: 60%; margin-left:20%">
+                <div class="medzera1"></div>
+            </div>
+            <hr>
+            <div id="jump-kontakt"></div>
+            <div id="kontakt">
+                <h1>Kontaktujte nás prosím telefonicky alebo emailom...</h1>
+                <div id="kontakt-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>PROEKO ZÁHRADY s.r.o.</p>
+                    <p>Čab 85, 951 24 ČAB</p>
+                </div>
+                <div id="kontakt-cas">
+                    <img src="img/timer.svg" alt="Time">
+                    <p>Pondelok - Piatok (pracovné dni)</p>
+                    <p>8:00 hod. - 16:00 hod.</p>
+                </div>
+                <div id="kontakt-jedna">
+                    <i class="fas fa-phone"></i>
+					<br>
+                    <a href="tel:+421903361540">0903 361 540</a>
+                </div>
+                <div id="kontakt-dva">
+                    <i class="fas fa-envelope"></i>
+                    <br>
+                    <a href="mailto:info@proeko-zahrady.sk">info@proeko-zahrady.sk</a>
+                </div>
+					<div class="medzera2">
+                </div>
+                <div id="kontakt-icons">
+                    <a href="https://www.facebook.com/BrezniakJuraj" target="_blank"><i class="fab fa-facebook fb"></i></a>
+                    <a href="https://www.youtube.com/channel/UCoKiangQjlbqqvU2XdDy8QQ" target="_blank"><img src="img/youtube-brands.png" alt="Youtube" id="yt"></a>
+                </div>
+            </div>
+            <div id="map">
+                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=proeko%20%20zahrady%20s.r.o.%20cab%2095124&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>

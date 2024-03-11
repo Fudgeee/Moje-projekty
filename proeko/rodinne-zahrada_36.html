@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const images = document.querySelectorAll('.clickable-image');
+                const enlargedView = document.createElement('div');
+                enlargedView.classList.add('enlarged');
+                let enlarged = false;
+        
+                document.body.appendChild(enlargedView);
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        enlargedView.innerHTML = '';
+                        enlarged = !enlarged;
+        
+                        if (enlarged) {
+                            const clone = image.cloneNode(true);
+                            clone.style.height = 'auto';
+                            enlargedView.appendChild(clone);
+                            enlargedView.style.opacity = 1;
+                            enlargedView.style.pointerEvents = 'auto';
+        
+                            // Přidáme tlačítko zavírání do zvětšeného pohledu
+                            const closeButton = document.createElement('div');
+                            closeButton.classList.add('close-button');
+                            closeButton.innerHTML = '&times;';
+                            enlargedView.appendChild(closeButton);
+        
+                            // Přidáme událost kliknutí na tlačítko zavírání
+                            closeButton.addEventListener('click', () => {
+                                enlargedView.style.opacity = 0;
+                                enlargedView.style.pointerEvents = 'none';
+                                enlarged = false;
+                            });
+        
+                            // Přidáme událost kliknutí mimo zvětšený pohled
+                            enlargedView.addEventListener('click', (event) => {
+                                if (event.target === enlargedView) {
+                                    enlargedView.style.opacity = 0;
+                                    enlargedView.style.pointerEvents = 'none';
+                                    enlarged = false;
+                                }
+                            });
+                        } else {
+                            enlargedView.style.opacity = 0;
+                            enlargedView.style.pointerEvents = 'none';
+                        }
+                    });
+                });
+            });
+        </script>  
+        <main>
+            <div class="rodinna-zahrada">
+                <div style="margin-top: 2rem;"></div>
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/01.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/02.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/03.jpg" alt="záhrada" class="clickable-image">
+                    
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/04.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/05.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/06.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/07.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/08.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/09.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/10.jpg" alt="záhrada" style="height: 307.5px;" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/11.jpg" alt="záhrada" style="height: 307.5px;" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/12.JPG" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/13.JPG" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/14.JPG" alt="záhrada" style="height: 307.5px;" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/15.JPG" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/16.JPG" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/17.jpg" alt="záhrada" class="clickable-image">
+                    <img src="img/rodinne/36 Zahrada/iloveimg-compressed/18.jpg" alt="záhrada" class="clickable-image">
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - <span id="current-year"></span> PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+        <script>
+            var currentYear = new Date().getFullYear();
+            document.getElementById("current-year").textContent = currentYear;
+        </script>
+    </body>
+</html>
