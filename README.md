@@ -1,3 +1,4 @@
 # Moje projekty
 
-[brezniak.sk]([https://brezniak.sk/)
+[brezniak.sk](https://brezniak.sk/)
+[https://brezniak.sk/](https://brezniak.sk/)https://brezniak.sk/
